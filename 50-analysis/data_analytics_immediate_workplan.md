@@ -13,7 +13,7 @@ Already assembled in the draft and ready to extend:
 - **ICT** — 9 indicators, Jun-21 to Jun-26 (international bandwidth starts Jun-23; Jun-21 and Jun-22 need sourcing)
 - **Water** — production and subscriptions, 2020/21 to 2025/26, complete
 
-Needs history from departments (request already drafted in `docs/04`):
+Needs history from departments (request already drafted in `../40-requests/information_requests_to_departments.md`):
 - **Energy** — 10 indicators, currently FY2024/25–FY2025/26 only (LPG imports from FY2022/23)
 - **Transport** — no annex table exists yet
 - **Nuclear** — no annex table exists yet
@@ -39,7 +39,7 @@ Extract application receipt date, decision date and outcome for every applicatio
 The draft notes that processing-time monitoring was introduced under strategic initiative 4, so the data should already be in CLMS. **This is the clearest regulatory-performance (not activity) indicator available at low cost**, and it measures RURA's own service delivery.
 
 ### A6. Redraw the three image-only charts once data arrives
-The owned-fibre chart, Figure 3.12, and Figure 3.17 (petroleum imports) exist only as images with no underlying data. They cannot be corrected, recoloured or checked. Data requests are in `docs/04`; redraw in the standard style on arrival.
+The owned-fibre chart, Figure 3.12, and Figure 3.17 (petroleum imports) exist only as images with no underlying data. They cannot be corrected, recoloured or checked. Data requests are in `../40-requests/information_requests_to_departments.md`; redraw in the standard style on arrival.
 
 ---
 

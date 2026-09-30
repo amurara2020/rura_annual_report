@@ -1,0 +1,86 @@
+# Source Document Registry
+
+Every input to the FY2025/26 Annual Report, where it lives, who owns it, and its status.
+
+**Rule: source documents are registered here, not stored in this repository** — see
+`../CONTRIBUTING.md` for why. This file is the index; Drive is the store.
+
+## Status legend
+
+| Status | Meaning |
+| :-- | :-- |
+| **BASELINE** | The authoritative agreed structure. Changes here override the repository |
+| **HELD** | Located and accessible |
+| **REFERENCED-MISSING** | The baseline document cites it, but it cannot be found in Drive |
+| **REQUESTED** | Formally requested from the owner; not yet received |
+
+---
+
+## 1. The baseline document
+
+| Field | Value |
+| :-- | :-- |
+| **Title** | `RURA_Draft_Annual_Report_FY2025-26_DESIGNED_final` |
+| **Status** | **BASELINE** |
+| **Type** | Google Doc |
+| **Drive ID** | `1SsoNtUda2z8rcS4br5mGJmX3RcdSB-fKDWZayGlBrrs` |
+| **Link** | https://docs.google.com/document/d/1SsoNtUda2z8rcS4br5mGJmX3RcdSB-fKDWZayGlBrrs/edit |
+| **Owner** | a.cesaire07@gmail.com |
+| **Location in Drive** | **"Shared with me" — not inside any folder owned by this account** |
+| **Created** | 30 September 2026, 07:50 UTC |
+| **Read for the assessment** | 30 September 2026, ~13:55 UTC |
+| **Self-described as** | "designed working draft, based on the draft of 22 September 2026" |
+
+**⚠ This document is live and being edited.** It was modified at 14:18 UTC on 30 September 2026,
+after the assessment was produced from the 13:55 version. **Re-read it and re-check the assessment
+before acting on the matrix.** See `CONTRIBUTING.md` § "Working against a live baseline".
+
+### Companion documents the baseline explicitly cites
+
+| Document | Cited for | Status |
+| :-- | :-- | :-- |
+| **RURA Visual Design Standard** | The visual standard applied to all charts and KPI cards | **REFERENCED-MISSING** — not found in Drive |
+| **M&E Framework (Excel)** | KPIs, baselines and Year-4 targets for chapter 2, annex 9.4 and every KPI-card target | **REFERENCED-MISSING** — not found in Drive |
+
+Both are load-bearing. The M&E Framework is the single largest dependency in the whole report
+(see `10-assessment/02_priority_items.md` item 8). Neither appears anywhere in this Drive account,
+so both must be requested from their owners.
+
+---
+
+## 2. Related material located in Drive
+
+Not part of the baseline, but relevant context. None is a substitute for the baseline.
+
+| Title | Type | Drive ID | Relevance |
+| :-- | :-- | :-- | :-- |
+| `TRANSPORT SECTOR REGULATION- Draft Annual Report 2024-2025 with comments` | .docx | `1qUBHj26WH4ou2fZ_UuhYjPJ301ZQyWfE` | Prior-year transport chapter. **Useful for section 2.4** (commitments from last year's report) |
+| `rura_kpi_transport_dashboard_11_10_2025` | .zip | `17bkioM3WRPYqsNBUANdiSYHdSxrUC-cV` | Existing transport KPI dashboard — check for reusable indicator definitions |
+| `RURA_Primary_Routes_w_additional_routes_incl_fixes_Jan_2025` | .zip | `10AAuDYI9_xDNCjmApbF8nVCzrqGJUYWD` | **GTFS route network.** Required for the AFC/e-ticketing analysis (priority item 11) |
+| `Enhancing RURA's Regulatory Effectiveness Through Centralized Data Analytics_FinalPaper` | .docx | `1ZttSGD9QfSWvOQsVB5Bypjh5uzFUur-x` | Positioning of the Data Analytics Team |
+| `Data Analytics Team Infrustructure Assessment` | Google Doc | `1LyNt2r6cdjgSCO1pNLFznVoMg8t-aypO_g1wupHjFYc` | Team capability context |
+| `data_team_stack_and_practices` | Google Doc | `1mXwk30CcggVV_2P9J7gKONwH6RuTIY2E03KMWsX6O2c` | Tooling conventions for the analysis workstream |
+| `RURA Draft Data Strategy Working Document - March 2023` | .docx | `1FrPPZdY93S1gCovu5063D7xahnw_eXOu` | Data governance background |
+| `Preliminary Report on the ABT Technical Assessment and Benchmark Mission_edited` | .docx | `1rj3TzlZVnQCtCkIOCAtAn9F2mYTkYEYA` | Account-based ticketing context for transport |
+| `20240930_RURA_fare_model incl subsidy` | .pptx | `11KwjmEXwcqgL0FL-hrjyyjn7dmwWSEmQ` | Fare modelling — relevant to the intercity fare review (section 3.5) |
+
+**Note on Drive organisation:** these files are scattered across unrelated folders. The transport
+draft annual report, for example, sits in a folder alongside personal material
+(`contracts and payments`, `penthouse_ideas`). See the Drive recommendation in
+`../README.md` § "Recommended Drive structure".
+
+---
+
+## 3. Not yet located — required for the report
+
+Everything in `40-requests/information_requests_to_departments.md` is **REQUESTED** or not yet
+requested. Track arrival in `40-requests/request_tracker.csv`, and register each file here on
+arrival with its Drive ID, owner and date received.
+
+---
+
+## How to register a new source
+
+Add a row with: title, type, Drive ID (or path), owner, date received, and which report section it
+serves. If it contains pre-publication figures, record it here and store it in Drive — **do not
+commit it.**

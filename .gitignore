@@ -1,0 +1,67 @@
+# ---------------------------------------------------------------------------
+# Source documents and received data live in Drive, not in git.
+# See 00-source/SOURCES.md and CONTRIBUTING.md.
+# ---------------------------------------------------------------------------
+
+# Office and PDF source documents (large, binary, undiffable, often confidential)
+*.docx
+*.doc
+*.dotx
+*.xlsx
+*.xls
+*.xlsm
+*.pptx
+*.ppt
+*.pdf
+
+# Raw and interim data as received — register in SOURCES.md, keep the files in Drive
+30-data/raw/**
+30-data/interim/**
+!30-data/raw/.gitkeep
+!30-data/interim/.gitkeep
+!30-data/raw/README.md
+!30-data/interim/README.md
+
+# Archives and images
+*.zip
+*.7z
+*.tar.gz
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.psd
+*.ai
+
+# Geospatial bulk
+*.shp
+*.shx
+*.dbf
+*.gpkg
+
+# Anything explicitly marked confidential
+*CONFIDENTIAL*
+*confidential*
+
+# Environment and credentials — never commit
+.env
+.env.*
+*credentials*
+*secret*
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+~$*
+*.tmp
+*.bak

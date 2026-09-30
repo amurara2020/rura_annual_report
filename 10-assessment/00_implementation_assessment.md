@@ -8,12 +8,16 @@
 
 | File | Purpose |
 | :-- | :-- |
-| `data/completion_matrix.csv` | The main working output: 73 rows, one per section, with status, existing content, missing data, required analysis, proposed visual, source, owner, action, priority and verification notes |
-| `data/visual_specifications.csv` | 44 specified visuals with title, type, variables, period, disaggregation, source, owner and intended regulatory message |
-| `docs/02_priority_items.md` | The 15 highest-priority items required to complete the report |
-| `docs/03_data_analytics_immediate_workplan.md` | What the Data Analytics Team should start producing now |
-| `docs/04_information_requests_to_departments.md` | Ready-to-send data and information requests, by department |
-| `docs/05_structural_flags_and_length_control.md` | Structural contradictions flagged separately, plus main-report vs annex recommendations |
+| `completion_matrix.csv` (this folder) | The main working output: 73 rows, one per section, with status, existing content, missing data, required analysis, proposed visual, source, owner, action, priority and verification notes |
+| `../60-visuals/specs/visual_specifications.csv` | 44 specified visuals with title, type, variables, period, disaggregation, source, owner and intended regulatory message |
+| `02_priority_items.md` (this folder) | The 15 highest-priority items required to complete the report |
+| `../50-analysis/data_analytics_immediate_workplan.md` | What the Data Analytics Team should start producing now |
+| `../40-requests/information_requests_to_departments.md` | Ready-to-send data and information requests, by department |
+| `05_structural_flags_and_length_control.md` (this folder) | Structural contradictions flagged separately, plus main-report vs annex recommendations |
+| `../70-qa/check_register.csv` | The baseline's `CHECK` items as a tracked register: 31 rows, 8 material |
+| `../40-requests/request_tracker.csv` | 71 tracked data requests with recipient, priority and status |
+| `../30-data/indicators/indicator_dictionary.csv` | Indicator metadata; seeded with the four undefined terms |
+| `../00-source/SOURCES.md` | Where every source document lives, with Drive IDs and status |
 
 ---
 
@@ -153,10 +157,10 @@ These are the cheapest wins available and should move first.
 ## 6. Recommended sequence
 
 1. **Clear the six material `CHECK` items this week.** They are corrections, not new work, and everything downstream depends on the numbers being right.
-2. **Send the departmental information requests** (`docs/04`) with a firm return date.
+2. **Send the departmental information requests** (`../40-requests/`) with a firm return date.
 3. **Release the M&E Framework, Action Plan report and Finance pack** to the Data Analytics Team.
 4. **Secure the AFC data feed** — the longest lead time of anything on the list, and the highest analytical payoff.
-5. **Start the Data Analytics Team on the work that needs nobody else** (`docs/03`) — the five-year statistical annex, the indicator dictionary, and recomputing every derived figure on one consistent basis.
+5. **Start the Data Analytics Team on the work that needs nobody else** (`../50-analysis/data_analytics_immediate_workplan.md`) — the five-year statistical annex, the indicator dictionary, and recomputing every derived figure on one consistent basis.
 6. **Then work Part by Part**, in the order of the matrix.
 
 ---
