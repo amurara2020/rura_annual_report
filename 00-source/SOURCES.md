@@ -31,9 +31,57 @@ Every input to the FY2025/26 Annual Report, where it lives, who owns it, and its
 | **Read for the assessment** | 30 September 2026, ~13:55 UTC |
 | **Self-described as** | "designed working draft, based on the draft of 22 September 2026" |
 
-**⚠ This document is live and being edited.** It was modified at 14:18 UTC on 30 September 2026,
-after the assessment was produced from the 13:55 version. **Re-read it and re-check the assessment
-before acting on the matrix.** See `CONTRIBUTING.md` § "Working against a live baseline".
+### Version verification — 30 September 2026
+
+A `.docx` export of the baseline was supplied directly (14:35 UTC) and compared against the version
+the assessment was produced from (Drive, ~13:55 UTC).
+
+**Result: the body text is identical.** Verified by comparing:
+
+| Check | Drive 13:55 | Supplied .docx | |
+| :-- | :-- | :-- | :-- |
+| `MISSING` annotations | 25 | 25 | ✔ |
+| `PARTIAL` annotations | 37 | 37 | ✔ |
+| `CHECK` annotations | 59 | 59 | ✔ |
+| `[DATA REQUIRED]` markers | 60 | 60 | ✔ |
+| `SOURCE TO CONFIRM` markers | 11 | 11 | ✔ |
+| 18 sampled headline figures | all present | all present | ✔ |
+
+**The 14:18 UTC modification was the addition of one comment, not a content change.**
+So **the assessment in `../10-assessment/` stands in full** — no row needs revisiting on
+version grounds.
+
+The document remains live and multi-authored, so the rule in
+`../CONTRIBUTING.md` § "Working against a live baseline" still applies to future edits.
+
+### Reviewer comments in the baseline
+
+Three open comments, all by Clemence Ingabire, all tracked with anchors and recommendations in
+[`../70-qa/reviewer_comments.csv`](../70-qa/reviewer_comments.csv):
+
+| ID | Time | Anchored to | Comment |
+| :-- | :-- | :-- | :-- |
+| `DOC-C1` | 10:20 | Table 3.26 caption (transport licences) | "Do we keep 2024-2025 columns or remove?" |
+| `DOC-C2` | 10:25 | Table 3.27 body (fleet size) | "to double check the table 41" |
+| `DOC-C3` | **14:18** | 3.5 Green Mobility electric adoption | "to make a graph for the trend" |
+
+### The supplied .docx — deliberately not committed
+
+| Field | Value |
+| :-- | :-- |
+| Received | 30 September 2026, 14:35 UTC |
+| Size | 14.7 MB (81 embedded images totalling 13.9 MB; body XML 3.8 MB) |
+| Origin | Google Docs export (embedded Quattrocento Sans, Tahoma, Noto Sans Symbols) |
+
+**Not added to this repository**, for two reasons:
+
+1. **The repository is public** and the document is an unpublished national regulatory report —
+   see `../CONTRIBUTING.md` § Confidentiality.
+2. **It is 14.7 MB of mostly binary image data.** Git would store every future revision in full and
+   still be unable to show what changed inside it.
+
+Once repository visibility is resolved, the right thing to commit is a **dated text snapshot** to
+`baseline/`, which diffs properly. The `.docx` itself stays in Drive.
 
 ### Companion documents the baseline explicitly cites
 

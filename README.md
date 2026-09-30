@@ -11,7 +11,9 @@ Financial Year 2025/26 (1 July 2025 – 30 June 2026).
 >
 > **2. The source documents were never in this repository.** `main` contains exactly one commit: a
 > 20-byte `README.md`. Nothing was lost — the documents live in Google Drive and are now indexed in
-> [`00-source/SOURCES.md`](00-source/SOURCES.md).
+> [`00-source/SOURCES.md`](00-source/SOURCES.md). A `.docx` of the baseline has since been supplied
+> and verified as identical to the version assessed; it is registered but **not committed**, because
+> of item 1.
 
 ## Where the documents actually are
 
@@ -67,7 +69,8 @@ dependency in the whole report.
   output/             Rendered charts
 
 70-qa/              Verification before publication
-  check_register.csv                       ← the baseline's CHECK items, tracked
+  check_register.csv                       ← the baseline's CHECK items, tracked (32 rows)
+  reviewer_comments.csv                    ← the baseline's open comments, with recommendations
 ```
 
 ### Why this shape
@@ -92,6 +95,7 @@ dependency in the whole report.
 | On the Data Analytics Team | [`50-analysis/data_analytics_immediate_workplan.md`](50-analysis/data_analytics_immediate_workplan.md) — Stream A needs nobody else |
 | Sending data requests | [`40-requests/`](40-requests/) |
 | Checking figures before publication | [`70-qa/check_register.csv`](70-qa/check_register.csv) |
+| Answering the reviewer's comments | [`70-qa/reviewer_comments.csv`](70-qa/reviewer_comments.csv) |
 | Producing charts | [`60-visuals/specs/visual_specifications.csv`](60-visuals/specs/visual_specifications.csv) |
 | Contributing anything | [`CONTRIBUTING.md`](CONTRIBUTING.md) |
 

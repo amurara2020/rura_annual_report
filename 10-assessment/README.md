@@ -31,6 +31,10 @@ future-state report.**
 
 ## ⚠ The assessment was made against a specific version
 
-It reflects the baseline as at **30 September 2026, ~13:55 UTC**. The document was edited at 14:18
-UTC. Re-read the baseline and re-check the affected rows before acting on them — see
-`../00-source/SOURCES.md`.
+The assessment was produced from the baseline as at **30 September 2026, ~13:55 UTC**. A `.docx`
+export supplied at 14:35 UTC has been compared against it: **the body text is identical**, and the
+14:18 UTC modification was the addition of one reviewer comment. **The assessment stands in full** —
+verification table in [`../00-source/SOURCES.md`](../00-source/SOURCES.md).
+
+Three reviewer comments in the baseline are tracked with recommendations in
+[`../70-qa/reviewer_comments.csv`](../70-qa/reviewer_comments.csv).
