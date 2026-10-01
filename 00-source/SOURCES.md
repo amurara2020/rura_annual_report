@@ -87,12 +87,29 @@ Once repository visibility is resolved, the right thing to commit is a **dated t
 
 | Document | Cited for | Status |
 | :-- | :-- | :-- |
-| **RURA Visual Design Standard** | The visual standard applied to all charts and KPI cards | **REFERENCED-MISSING** — not found in Drive |
+| **RURA Visual Design Standard** | The visual standard applied to all charts and KPI cards | **HELD** — supplied 1 October 2026 as `RURA_Annual_Report_Visual_Design_Standard_1.docx`, v1.0 DRAFT FOR REVIEW, Data Science and Analytics Division. Reviewed in [`../80-design/`](../80-design/) |
 | **M&E Framework (Excel)** | KPIs, baselines and Year-4 targets for chapter 2, annex 9.4 and every KPI-card target | **REFERENCED-MISSING** — not found in Drive |
 
-Both are load-bearing. The M&E Framework is the single largest dependency in the whole report
-(see `10-assessment/02_priority_items.md` item 8). Neither appears anywhere in this Drive account,
-so both must be requested from their owners.
+The **M&E Framework remains missing** and is the single largest dependency in the whole report
+(see `../10-assessment/02_priority_items.md` item 8). It does not appear anywhere in this Drive
+account and must be requested from its owner.
+
+The **Visual Design Standard has since been supplied** (1 October 2026). It is a substantial
+18-section document and is authoritative for the report's design. Review and proposed v1.1 changes:
+[`../80-design/`](../80-design/).
+
+### A third source document: the Statistics Edition
+
+| Field | Value |
+| :-- | :-- |
+| **Title** | `RURA_Annual_Report_2025-26_Statistics_Edition_1.pdf` |
+| **Received** | 1 October 2026 |
+| **Format** | 83 pages, A5 landscape (210 × 148 mm) |
+| **Produced by** | HTML → Chrome → PDF (`Skia/PDF m141`) |
+| **Status** | **HELD** — a separate artifact from the baseline DESIGNED draft, one indicator per page |
+
+It is **not** the baseline. It is a statistics-format edition covering the same reporting year, and it
+does not implement the Visual Design Standard — see [`../80-design/00_design_review.md`](../80-design/00_design_review.md).
 
 ---
 
