@@ -9,6 +9,7 @@ Work on the **look** of the FY2025/26 Annual Report. Content is in `../10-assess
 | :-- | :-- |
 | `00_design_review.md` | The Statistics Edition reviewed against the Visual Design Standard, and the Standard reviewed on its own terms |
 | `01_title_system.md` | The distinctive title, cover and divider system — why the current one is generic and what replaces it |
+| `02_image_generation_brief.md` | Copy-paste art-direction prompt for ChatGPT or another image generator, to explore visual concepts |
 | `VISUAL_DESIGN_STANDARD_v1.1_proposed_changes.md` | Six changes and two additions, each with the test behind it |
 | `specimen/` | The Standard as working code, in both formats |
 
