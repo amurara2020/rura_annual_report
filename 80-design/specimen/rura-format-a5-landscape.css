@@ -1,0 +1,30 @@
+/* ===========================================================================
+   LAYER 2 of 3 — FORMAT B: STATISTICS EDITION
+   A5 landscape, 210 × 148 mm. One indicator per page.
+   Load between rura-tokens.css and rura-components.css.
+   =========================================================================== */
+:root {
+  --format: "B";
+  --page-w: 210mm; --page-h: 148mm;
+  --margin-x: 13mm; --margin-top: 10mm; --margin-bottom: 12mm;
+
+  /* Display steps sit one notch below Format A: the page is half the height,
+     so a 22pt H1 would dominate it. Body and below are unchanged — they are
+     fixed in the token layer and no format may override them. */
+  --t-display: 22pt; --t-display-lh: 1.08;
+  --t-h1:      15pt; --t-h1-lh:      1.15;
+  --t-h2:      11.5pt; --t-h2-lh:    1.25;
+  --t-h3:      10pt; --t-h3-lh:      1.3;
+  --t-kpi:     17pt; --t-kpi-sm:     13pt;
+
+  /* Two zones side by side: primary 58%, secondary 42%, 8 mm gutter */
+  --zone-primary: 58%; --zone-secondary: 42%; --zone-gutter: var(--s-4);
+
+  /* Format B carries one indicator per page, so a short page means the
+     components are too small — not that there is nothing to say. */
+  --min-fill: 80%;
+}
+@page { size: 210mm 148mm; margin: 0; }
+.pg-body { flex-direction: row; }
+.pg-body > .col-main { flex: 1 1 var(--zone-primary); }
+.pg-body > .col-side { flex: 1 1 var(--zone-secondary); }

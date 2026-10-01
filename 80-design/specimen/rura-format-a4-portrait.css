@@ -1,0 +1,41 @@
+/* ===========================================================================
+   LAYER 2 of 3 — FORMAT A: MAIN REPORT
+   A4 portrait, 210 × 297 mm. Narrative with figures.
+   Load between rura-tokens.css and rura-components.css.
+   =========================================================================== */
+:root {
+  --format: "A";
+  --page-w: 210mm; --page-h: 297mm;
+  --margin-x: 25.4mm; --margin-top: 20mm; --margin-bottom: 18mm;  /* Standard §14 */
+
+  --t-display: 28pt; --t-display-lh: 1.06;
+  --t-h1:      22pt; --t-h1-lh:      1.1;    /* Standard §4: 22 / 24pt */
+  --t-h2:      14pt; --t-h2-lh:      1.21;   /* Standard §4: 14 / 17pt */
+  --t-h3:      11.5pt; --t-h3-lh:    1.22;   /* Standard §4: 11.5 / 14pt */
+  --t-kpi:     18pt; --t-kpi-sm:     14pt;   /* Standard §4: KPI value 15–18pt */
+
+  /* Standard §14: single text column, 159 mm; figures full width or
+     half width (76 mm) side by side with a 7 mm gutter. */
+  --text-w: 159mm; --fig-half: 76mm; --zone-gutter: 7mm;
+
+  /* Standard §14 — "a chapter may end mid-page". Narrative pages are not
+     held to a fill minimum; only Format B is. */
+  --min-fill: none;
+}
+@page { size: 210mm 297mm; margin: 0; }
+
+/* Format A stacks: the analytical page runs title → visual → KPI panel →
+   insight box → source down a single column (Standard §14). */
+.pg-body { flex-direction: column; gap: var(--s-3); }
+.pg-body > .col-main,
+.pg-body > .col-side { flex: 0 0 auto; }
+
+/* Half-width figures sit side by side in a row */
+.row-2 { display: flex; gap: var(--zone-gutter); align-items: stretch; }
+.row-2 > * { flex: 1 1 0; min-width: 0; }
+
+/* Prose — only Format A has running body text */
+.prose p { margin: 0 0 var(--s-2); max-width: var(--text-w); }
+.prose p.lead {
+  font-size: var(--t-h3); line-height: 1.35; color: var(--navy);
+}

@@ -92,24 +92,38 @@ Validated as a categorical set: lightness band PASS, chroma floor PASS, contrast
 
 Five classes rather than four; drop to four by omitting class 2 if preferred. `#DCEAF7` keeps its §3 role as a *fill* for Regulatory Insight boxes and total rows, where nothing sits on it.
 
-## Change 5 — Formats: add landscape (§14) · **Medium priority**
+## Change 5 — Two formats, one system (§14) · **Confirmed 1 October 2026**
 
-**Gap.** §14 defines one format: A4 portrait, 25.4 mm margins, 159 mm text width. The Statistics Edition is **A5 landscape** and therefore had no grid in the Standard to follow.
+**Decision taken:** the main report and the statistics edition are **one design system in two formats**, not two products that resemble each other.
 
-**Proposed — §14 defines two formats, both governed by the same tokens:**
+**Gap in v1.0.** §14 defines one format — A4 portrait, 25.4 mm margins, 159 mm text width. The Statistics Edition is A5 landscape and therefore had no grid in the Standard to follow, which is a large part of why it diverged.
+
+**Proposed §14 — what is shared and what is format-specific.** The split is the substance of the decision: anything that affects how a reader interprets a number is shared, and only page geometry and display sizing change.
+
+| | Shared — identical in both formats | Format-specific |
+| :-- | :-- | :-- |
+| **Colour** | the entire palette: brand, chart grammar, sector, status, categorical, sequential | — |
+| **Type** | **body 10 / 14.4 pt, table 8.5 pt, caption 8.5 pt, source 7.5 pt, 7 pt floor** | display steps H1–H3 and KPI value |
+| **Charts** | chart-selection rules, colour grammar, labelling, axis rules | figure width |
+| **Components** | KPI card, table, callout boxes, status system, captions and sources | — |
+| **Numbers** | all of §12 | — |
+| **Page** | — | size, margins, columns, content per page, vertical fill |
+
+**Reading sizes are shared, not scaled.** Legibility does not change with paper size, so Format B does not get smaller body text for being a smaller page. This is the rule that makes 7.8 pt body impossible rather than merely discouraged, and it is enforced structurally: the reading sizes are declared in the token layer, which the format layers cannot override.
 
 | | **Format A — Main report** | **Format B — Statistics edition** |
 | :-- | :-- | :-- |
 | Page | A4 portrait, 210 × 297 mm | A5 landscape, 210 × 148 mm |
-| Margins | 25.4 mm | 13 mm sides, 10 mm top, 12 mm foot |
-| Columns | single, 159 mm | two zones: primary 58%, secondary 42%, 8 mm gutter |
-| Content per page | narrative plus figures | **one indicator** |
-| Body type | 10 / 14.4 pt | 9 / 13 pt |
-| Vertical fill | a chapter may end mid-page | **content fills ≥ 80% of page height** |
+| Margins | 25.4 mm (§14) | 13 mm sides, 10 mm top, 12 mm foot |
+| Columns | single text column, 159 mm; half-width figures 76 mm, 7 mm gutter | two zones — primary 58%, secondary 42%, 8 mm gutter |
+| Content per page | narrative with figures | **one indicator** |
+| Display sizes | H1 22 pt, H2 14 pt, H3 11.5 pt (§4) | H1 15 pt, H2 11.5 pt, H3 10 pt — one step down |
+| Body and below | **10 / 14.4 pt — identical** | **10 / 14.4 pt — identical** |
+| Vertical fill | a chapter may end mid-page (§14) | **content fills ≥ 80% of page height** |
 
-The one-indicator-per-page architecture of the Statistics Edition is good and should be written into the Standard as Format B, not left undefined.
+**Why the fill rule applies only to Format B.** §14's "never fill a page for the sake of it" is right for narrative, where a chapter ending mid-page is normal. It was read as licence for a **59% median fill across 83 pages**, with 31 pages stopping before halfway. In Format B each page carries exactly one indicator, so a short page means the components are too small — not that there is nothing more to say.
 
-**Add the vertical-fill rule.** §14's "never fill a page for the sake of it" is right for narrative, and was read as licence for a **59% median fill across 83 pages**, with 31 pages stopping before halfway. In Format B each page carries exactly one indicator, so a short page means the components are too small, not that there is nothing to say.
+The one-indicator-per-page architecture is a genuine strength of the Statistics Edition and should be written into the Standard as Format B rather than left undefined.
 
 ## Change 6 — Type scale and font delivery (§4) · **Medium priority**
 
@@ -159,7 +173,7 @@ A reviewer running these on v1.0 would have found the Energy/Transport collision
 | 2 | Sector colour never the only cue | §5, §16 | High |
 | 3 | Categorical palette, six slots | §3 (new) | High |
 | 4 | Map ramp light end raised | §9 | Medium |
-| 5 | Add Format B (landscape) + vertical-fill rule | §14 | Medium |
+| 5 | Two formats, one system; shared reading sizes; fill rule for Format B | §14 | **Confirmed** |
 | 6 | Closed type scale; real weights; self-hosted font | §4 | Medium |
 | A | Machine-readable tokens | §19 (new) | High |
 | B | Pre-publication colour check | §18 | Medium |

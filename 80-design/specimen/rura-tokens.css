@@ -1,0 +1,132 @@
+/* ===========================================================================
+   RURA REPORT — LAYER 1 of 3: TOKENS  (format-invariant)
+   ---------------------------------------------------------------------------
+   ONE DESIGN SYSTEM, TWO FORMATS.
+     Format A — main report,        A4 portrait   → rura-format-a4-portrait.css
+     Format B — statistics edition, A5 landscape  → rura-format-a5-landscape.css
+
+   Nothing in this file knows about page size. Colour, status, chart grammar,
+   number style and the reading-size type steps are identical in both formats:
+   that is what makes them one system rather than two that look alike.
+
+   Load order:  rura-tokens.css → rura-format-*.css → rura-components.css
+   =========================================================================== */
+
+:root {
+  /* ============================================================
+     Tokens are taken from the RURA Annual Report Visual Design
+     Standard v1.0 (Data Science and Analytics Division).
+     The Standard is authoritative. Three values are PROPOSED
+     CHANGES, marked [v1.1] — see ../VISUAL_DESIGN_STANDARD_v1.1_proposed_changes.md
+     ============================================================ */
+
+  /* Brand and supporting — Standard §3 */
+  --rura-blue:    #004589;   /* headings, current-year data, header rows, KPI values  9.49:1 */
+  --lime:         #A7CF36;   /* rules, accents, achievement bar — NEVER text (1.81:1) */
+  --navy:         #17365D;   /* H3, finding titles, callout titles                   12.19:1 */
+  --light-blue:   #DCEAF7;   /* Regulatory Insight fill, total rows, On-track fill */
+  --light-green:  #EDF5D8;   /* Key Achievement fill, Achieved fill */
+  --slate:        #5B6573;   /* captions, sources, labels, axis text                  5.91:1 */
+  --light-grey:   #F2F4F6;   /* KPI card background, banded rows, Case Study box */
+  --amber:        #E6A23C;   /* Attention fill / Emerging Risk bar — fill only (2.19:1) */
+  --muted-red:    #C94C4C;   /* adverse change, Not achieved, [DATA REQUIRED]         4.54:1 */
+  --dark-green:   #4E7A12;   /* TEXT for "improved" / "Achieved"                      5.10:1 */
+  --dark-amber:   #8A5A00;   /* TEXT for "watch" / "Attention"                        5.93:1 */
+  --body-ink:     #1E2630;   /* Standard §4 body colour */
+  --rule-grey:    #D5DBE1;   /* table row rules, Standard §8 */
+  --grid-grey:    #E3E7EB;   /* chart gridlines, Standard §6 */
+  --surface:      #FFFFFF;
+
+  /* Chart grammar — Standard §3. Blue = this year, grey = earlier.
+     The ONLY saturated series is the current period. */
+  --c-current:    #004589;
+  --c-previous:   #9AA3AD;
+  --c-older:      #C9CED4;
+  --c-secondary:  #5B8DC4;
+  --c-target:     #4E7A12;
+  --c-attention:  #E6A23C;
+  --c-adverse:    #C94C4C;
+
+  /* Sector identity — Standard §5. Identity only; never inside a chart.
+     [v1.1] Energy moved #B8860B -> #6B4A12: against Transport #D87520 the
+     old value separated by only ΔE 6.9 normal / 1.3 deuteranopia. */
+  --sec-ict:        #1976B9;
+  --sec-energy:     #6B4A12;
+  --sec-water:      #1597A5;
+  --sec-transport:  #D87520;
+  --sec-nuclear:    #6F5A9E;
+
+  /* [v1.1] Categorical set — the Standard has no palette for data that is
+     neither a time period nor a sector (technologies, licence types,
+     offence categories). Validated all-pairs; assign in fixed order. */
+  --cat-1: #2A7FC4; --cat-2: #DE6A14; --cat-3: #009A8C;
+  --cat-4: #9063B8; --cat-5: #5F9221; --cat-6: #C94F6D;
+
+  /* [v1.1] Sequential ramp for choropleths — Standard §9 asks for
+     "4 sequential blue classes #DCEAF7 -> #004589"; #DCEAF7 is 1.19:1 on
+     white, so the lightest class disappears. Light end raised to 2.07:1. */
+  --seq-1: #8FB6DB; --seq-2: #5F97C8; --seq-3: #2A7FC4; --seq-4: #1B5A8F; --seq-5: #0C3A60;
+  --seq-nodata: #E8EAED;
+
+  /* Tints of RURA Blue, for text and panels that sit ON the blue field.
+     Contrast measured against --rura-blue #004589, not against white. */
+  --on-blue-strong: #D5E3EF;   /* 7.2:1 on RURA Blue — list text, meta */
+  --on-blue:        #C7D8E7;   /* 6.4:1 on RURA Blue — labels, captions */
+  --on-blue-soft:   #A9C6DF;   /* 4.9:1 on RURA Blue — subtitles, eyebrows */
+  --blue-panel-1:   #1C4E78;   /* chapter-divider art field */
+  --blue-panel-2:   #0A2F4F;
+  --preview-surround: #8894A0; /* screen only; never printed */
+
+  /* Status — Standard §11. ALWAYS symbol + word + colour. */
+  --st-achieved:  #4E7A12;
+  --st-ontrack:   #004589;
+  --st-attention: #8A5A00;
+  --st-failed:    #C94C4C;
+  --st-none:      #5B6573;
+
+  /* Type — Standard §4 specifies Tahoma. The Standard's own QC notes that
+     Tahoma is absent from the build machine, which is why the Statistics
+     Edition fell back to other families. [v1.1] Self-host the font file so
+     the pipeline cannot substitute silently. Verdana is the metric sibling. */
+  --font: Tahoma, Verdana, "DejaVu Sans", sans-serif;
+
+  --lh-body: 1.44;              /* Standard §4: 10/14.4pt */
+
+  /* Spacing — Standard §14: multiples of 6pt ≈ 2mm */
+  --s-1: 2mm; --s-2: 4mm; --s-3: 6mm; --s-4: 8mm; --s-5: 12mm;
+
+
+  /* aliases used by the components below */
+  --brand-navy: var(--rura-blue);
+  --brand-green: var(--lime);
+  --brand-navy-deep: var(--navy);
+  --ink-strong: var(--navy); --ink: var(--body-ink);
+  --ink-soft: var(--slate);  --ink-muted: var(--slate); --ink-invert: #FFFFFF;
+  --surface-sunken: var(--light-grey); --surface-tile: var(--light-grey);
+  --rule: var(--rule-grey); --rule-strong: var(--rura-blue);
+  --font-display: var(--font); --font-text: var(--font);
+  --t-display-lh: 1.08; --t-h1-lh: 1.15; --t-h2-lh: 1.25; --t-h3-lh: 1.3;
+  --t-body-lh: var(--lh-body); --t-small-lh: 1.4; --t-caption-lh: 1.35; --t-micro-lh: 1.3;
+  --year-prior: var(--c-previous); --year-current: var(--c-current);
+  --status-good: var(--st-achieved); --status-warning: var(--st-attention);
+  --status-serious: var(--st-failed); --status-neutral: var(--st-none);
+  --div-up-3: #4E7A12; --div-up-2: #6E9A35; --div-up-1: #A8C98C;
+  --div-down-1: #E3B0B0; --div-down-2: #D27A7A; --div-down-3: #C94C4C;
+  --div-mid: #CFCFCD;
+}
+
+
+/* --- READING SIZES: IDENTICAL IN BOTH FORMATS ---------------------------
+   Body and below govern legibility, which does not change with paper size.
+   Standard §4: body 10 / 14.4 pt. These are fixed here, not in the format
+   layer, so no format can quietly shrink the text to win space. */
+:root {
+  --t-body:     10pt;   --lh-body:    1.44;   /* Standard §4 — 10 / 14.4pt */
+  --t-small:     8.5pt; --lh-small:   1.4;    /* table text, Standard §8 */
+  --t-caption:   8.5pt; --lh-caption: 1.35;   /* captions, Standard §4 */
+  --t-source:    7.5pt; --lh-source:  1.3;    /* source lines, Standard §4 */
+  --t-micro:     7pt;   --lh-micro:   1.3;    /* HARD FLOOR — nothing smaller */
+
+  --t-body-lh: var(--lh-body); --t-small-lh: var(--lh-small);
+  --t-caption-lh: var(--lh-caption); --t-micro-lh: var(--lh-micro);
+}
