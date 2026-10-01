@@ -76,6 +76,8 @@
   --blue-panel-1:   #1C4E78;   /* chapter-divider art field */
   --blue-panel-2:   #0A2F4F;
   --preview-surround: #8894A0; /* screen only; never printed */
+  --hairline-on-brand: rgba(255,255,255,.28);  /* rules on a brand field */
+  --ghost-on-brand:    rgba(255,255,255,.10);  /* oversized ghosted numeral */
 
   /* Status — Standard §11. ALWAYS symbol + word + colour. */
   --st-achieved:  #4E7A12;

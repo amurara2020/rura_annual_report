@@ -12,6 +12,7 @@
      so a 22pt H1 would dominate it. Body and below are unchanged — they are
      fixed in the token layer and no format may override them. */
   --t-display: 22pt; --t-display-lh: 1.08;
+  --t-cover:   34pt;   /* cover only */
   --t-h1:      15pt; --t-h1-lh:      1.15;
   --t-h2:      11.5pt; --t-h2-lh:    1.25;
   --t-h3:      10pt; --t-h3-lh:      1.3;

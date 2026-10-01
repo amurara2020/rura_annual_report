@@ -1,0 +1,155 @@
+/* ===========================================================================
+   TITLE SYSTEM — the distinctive layer
+   ---------------------------------------------------------------------------
+   Replaces the badge + angled-banner + rule device of the Statistics Edition,
+   which is a generic corporate template signature used by many institutions.
+
+   Three ideas, all of them derived from RURA rather than applied to it:
+
+   1. THE TITLE IS THE FINDING, not the topic.
+      Standard §1 principle 2 already requires this; the Statistics Edition
+      uses topic titles instead. "Mobile penetration passed 100 per 100
+      inhabitants" cannot be supplied by any template — only RURA's own data
+      produces it. This is what makes the document structurally un-copyable.
+
+   2. SENTENCE CASE, NOT CAPS.
+      Standard §2 rejects all-caps headings ("capitals are slower to read and
+      hide acronyms"); the Statistics Edition sets every title in caps.
+
+   3. THE SECTOR SPECTRUM — the signature device.
+      Five segments, one per regulated sector, in the Standard §5 sector
+      colours. The active sector burns at full strength; the other four sit
+      back. It is ornament that does a job: it says which sector you are in,
+      and it is unique to RURA because RURA regulates exactly these five.
+      It replaces the green rule on every title, divider, cover and footer.
+   =========================================================================== */
+
+/* --- the sector spectrum ------------------------------------------------- */
+.spectrum { display: flex; gap: 0.8mm; height: 1.1mm; }
+.spectrum i { flex: 1 1 0; background: currentColor; opacity: .34; border-radius: .4mm; }
+.spectrum i.on { opacity: 1; flex: 2.2 1 0; }
+.spectrum.ict       { color: var(--sec-ict); }
+.spectrum.energy    { color: var(--sec-energy); }
+.spectrum.water     { color: var(--sec-water); }
+.spectrum.transport { color: var(--sec-transport); }
+.spectrum.nuclear   { color: var(--sec-nuclear); }
+.spectrum.inst      { color: var(--rura-blue); }
+/* each segment keeps its own sector colour; .on simply brightens */
+.spectrum i:nth-child(1) { background: var(--sec-ict); }
+.spectrum i:nth-child(2) { background: var(--sec-energy); }
+.spectrum i:nth-child(3) { background: var(--sec-water); }
+.spectrum i:nth-child(4) { background: var(--sec-transport); }
+.spectrum i:nth-child(5) { background: var(--sec-nuclear); }
+.spectrum.on-dark i { opacity: .3; }
+.spectrum.on-dark i.on { opacity: 1; }
+
+/* --- title block --------------------------------------------------------- */
+.title-block {
+  padding: var(--margin-top) var(--margin-x) 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: var(--s-3);
+  align-items: start;
+}
+.title-block .num {
+  font-size: var(--t-h1); font-weight: 300; line-height: 1;
+  color: var(--sec, var(--rura-blue)); opacity: .55;
+  font-variant-numeric: tabular-nums; padding-top: .6mm;
+}
+.title-block .stack { min-width: 0; }
+.title-block .kicker {
+  font-size: var(--t-micro); font-weight: 700;
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--sec, var(--slate));
+  margin-bottom: 1.4mm;
+}
+/* The finding. Sentence case, generous, two lines maximum. */
+.title-block h1 {
+  font-size: var(--t-h1); line-height: 1.16; font-weight: 700;
+  color: var(--navy); margin: 0; letter-spacing: -.004em;
+  max-width: 62ch;
+}
+/* The neutral description — what the Statistics Edition used as its title. */
+.title-block .deck {
+  margin-top: 1.6mm; font-size: var(--t-caption); line-height: 1.35;
+  color: var(--slate); max-width: 70ch;
+}
+.title-block .spectrum { grid-column: 1 / -1; margin-top: var(--s-2); }
+
+/* --- sector scoping ------------------------------------------------------ */
+.s-ict       { --sec: var(--sec-ict); }
+.s-energy    { --sec: var(--sec-energy); }
+.s-water     { --sec: var(--sec-water); }
+.s-transport { --sec: var(--sec-transport); }
+.s-nuclear   { --sec: var(--sec-nuclear); }
+.s-inst      { --sec: var(--rura-blue); }
+
+/* --- foot ---------------------------------------------------------------- */
+.foot-v2 {
+  flex: 0 0 auto; margin: 0 var(--margin-x) var(--margin-bottom);
+  display: flex; align-items: flex-end; gap: var(--s-3);
+  font-size: var(--t-micro); color: var(--slate);
+}
+.foot-v2 .meta { flex: 1 1 auto; }
+.foot-v2 .meta b { color: var(--body-ink); font-weight: 700; }
+.foot-v2 .src { font-style: italic; }
+.foot-v2 .folio {
+  font-size: var(--t-h3); font-weight: 700; color: var(--navy);
+  font-variant-numeric: tabular-nums; line-height: 1;
+}
+
+/* --- cover --------------------------------------------------------------- */
+.cover-v2 { padding: 0; background: var(--rura-blue); }
+.cover-v2 .top { flex: 1 1 auto; padding: var(--margin-top) var(--margin-x) 0; display: flex; flex-direction: column; }
+.cover-v2 .org {
+  font-size: var(--t-micro); letter-spacing: .2em; text-transform: uppercase;
+  color: var(--on-blue-soft);
+}
+.cover-v2 h1 {
+  margin: var(--s-4) 0 0; color: var(--ink-invert); font-weight: 700;
+  font-size: var(--t-cover); line-height: 1.02; letter-spacing: -.018em;
+}
+.cover-v2 h1 em { font-style: normal; font-weight: 300; font-size: .62em; color: var(--on-blue-soft); display: block; margin-top: 2mm; letter-spacing: -.008em; }
+.cover-v2 .spectrum { margin: var(--s-3) 0 0; width: 58%; height: 1.4mm; }
+.cover-v2 .period { margin-top: var(--s-3); font-size: var(--t-small); color: var(--on-blue); }
+
+/* The year as a data field: the cover is made of RURA's own numbers. */
+.cover-v2 .field {
+  margin-top: auto; display: grid; grid-template-columns: repeat(5, 1fr);
+  gap: var(--s-2) var(--s-3); padding-bottom: var(--s-4);
+}
+.cover-v2 .field div { border-top: .3mm solid var(--hairline-on-brand); padding-top: 1.6mm; }
+.cover-v2 .field .n {
+  font-size: var(--t-h2); font-weight: 700; color: var(--ink-invert); line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.cover-v2 .field .k { font-size: var(--t-micro); color: var(--on-blue-soft); margin-top: 1mm; line-height: 1.25; }
+.cover-v2 .base {
+  flex: 0 0 15mm; background: var(--surface); display: flex; align-items: center;
+  justify-content: space-between; padding: 0 var(--margin-x);
+}
+.cover-v2 .wordmark { font-size: var(--t-h2); font-weight: 700; color: var(--rura-blue); }
+.cover-v2 .tag { font-size: var(--t-micro); color: var(--slate); letter-spacing: .1em; text-transform: uppercase; }
+
+/* --- chapter divider ----------------------------------------------------- */
+/* No photograph: it sidesteps the unresolved image-rights question (CHK-22)
+   and reads as deliberate rather than stock. */
+.div-v2 { padding: 0; background: var(--navy); position: relative; }
+.div-v2 .ghost {
+  position: absolute; right: -10mm; top: 50%; transform: translateY(-50%);
+  font-size: 150pt; font-weight: 700; line-height: .72;
+  color: var(--sec, var(--rura-blue)); opacity: .34;
+  font-variant-numeric: tabular-nums; letter-spacing: -.03em;
+}
+.div-v2 .inner {
+  position: relative; z-index: 1; flex: 1 1 auto; overflow: hidden;
+  padding: var(--margin-top) var(--margin-x) var(--margin-bottom);
+  display: flex; flex-direction: column; justify-content: center; color: var(--ink-invert);
+}
+.div-v2 .kicker { font-size: var(--t-micro); letter-spacing: .2em; text-transform: uppercase; color: var(--sec, var(--on-blue-soft)); font-weight: 700; }
+.div-v2 h1 { font-size: var(--t-display); font-weight: 700; margin: var(--s-2) 0 0; line-height: 1.05; letter-spacing: -.012em; }
+.div-v2 .lede { margin-top: var(--s-2); font-size: var(--t-caption); max-width: 56ch; opacity: .9; line-height: 1.4; }
+.div-v2 .spectrum { margin: var(--s-3) 0; width: 52%; height: 1.4mm; }
+.div-v2 .toc { columns: 2; column-gap: var(--s-4); font-size: var(--t-caption); margin-top: var(--s-1); }
+.div-v2 .toc div { break-inside: avoid; margin-bottom: 1.5mm; opacity: .92; }
+.div-v2 .toc b { font-weight: 700; color: var(--sec, var(--on-blue-soft)); margin-right: 1.6mm; font-variant-numeric: tabular-nums; }

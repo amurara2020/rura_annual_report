@@ -8,6 +8,7 @@ Work on the **look** of the FY2025/26 Annual Report. Content is in `../10-assess
 | File | What it is |
 | :-- | :-- |
 | `00_design_review.md` | The Statistics Edition reviewed against the Visual Design Standard, and the Standard reviewed on its own terms |
+| `01_title_system.md` | The distinctive title, cover and divider system — why the current one is generic and what replaces it |
 | `VISUAL_DESIGN_STANDARD_v1.1_proposed_changes.md` | Six changes and two additions, each with the test behind it |
 | `specimen/` | The Standard as working code, in both formats |
 
@@ -31,6 +32,7 @@ rura-format-a5-landscape.css            Format B: ditto
   ↓
 rura-components.css          ← LAYER 3  KPI card, table, callouts, status, charts, page furniture
                                         format-invariant; no literal colour, no page geometry
+rura-titles.css              ← LAYER 4  title, cover and divider system (optional, additive)
 ```
 
 Both specimens load layers 1 and 3 **unchanged** and differ only in layer 2.
@@ -58,6 +60,7 @@ Worth re-running after any edit; they are one `grep` each.
 | :-- | :-- | :-- |
 | `specimen-a-a4-portrait.html` / `.pdf` | **A** — main report, A4 portrait | cover · Energy sector opener · analytical page |
 | `specimen-b-a5-landscape.html` / `.pdf` | **B** — statistics edition, A5 landscape | cover · chapter divider · at-a-glance · trend · reliability · diverging change |
+| `specimen-c-distinctive.html` / `.pdf` | **B**, with the new title system | cover · divider · two indicator pages (compare pp. 19 and 45) |
 
 Format B's pages 3–6 are direct rebuilds of pp. 7, 19, 45 and 72 of the Statistics Edition, so they can be compared side by side.
 
