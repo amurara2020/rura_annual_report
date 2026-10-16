@@ -895,3 +895,59 @@ Exhibits 2.5 cm or larger with no number   : cover, 4 chapter dividers, the
 Figure numbers with no exhibit             : Figure 47, Figure 49
 Figure numbers resting on a divider        : Figure 54 (photograph still owed)
 ```
+
+---
+
+## Pass 11 — four thin titles replaced (16 Oct)
+
+A note on numbers first: removing the Figure 1 caption in Pass 10 shifted every
+figure down by one, so **the figures asked for as 13 and 34 are now 12 and 33**.
+They are the same two exhibits.
+
+| | Was | Now |
+|---|---|---|
+| **Figure 12** | Internet Service Provision | **Fixed Broadband Subscriptions and Market Share by Operator, June 2026** |
+| **Figure 33** | Operators | **Population Served by Licensed Rural Water Operators, by District, FY 2025/26** |
+| **Table 40** | Statistical tables | **ICT indicators, June 2021 to June 2026** |
+| **Table 41** | Statistical tables — Water indicator | **Water indicators, 2020/21 to 2025/26** |
+
+### Where each title comes from
+
+- **Figure 12** repeated its own section heading, *2.1.4.4 Internet Service
+  Provision*. Opening the chart: horizontal bars of fixed broadband
+  subscriptions by provider with market share — Canal+ Telecom 42,517 (50.52%),
+  MTN 13,668, Liquid Telecom 10,301, BSC 4,500, StarLink 3,969, Airtel 3,438,
+  other ISPs 5,759. **Those sum to exactly 84,152**, the fixed broadband figure
+  in the ICT AT A GLANCE panel, and the text above it says *"As of June 2026"* —
+  which is where the date in the title comes from. The wording follows Figure 4,
+  *Mobile-Cellular Subscriptions and Market Share by Operator*.
+- **Figure 33** had taken the one-word heading *Operators* sitting above it. The
+  document already states the real title on the line immediately above the
+  chart: *Population Served by Licensed Rural Water Operators, by District,
+  FY 2025/26.* That wording is used verbatim, minus the trailing full stop, as
+  no other caption carries one. The chart matches it: population served per
+  district, coloured by province, with an operator count beside each bar.
+- **Table 40** and **Table 41** both read *Statistical tables*, which is the
+  annex heading above them, not a title. Their own column headers give the
+  answer: `ICT indicator | Jun-21 … Jun-26` and `Water indicator | 2020/21 …
+  2025/26`. The new titles follow the pattern already used by their siblings,
+  Table 42 *Energy indicators* and Table 43 *Transport licenses by category*.
+
+### Worth considering
+
+**Table 42 is still just *Energy indicators***, with no period given, so the four
+annex tables are not quite parallel. Adding its span would line them up. Four
+other captions are also short, though each is unambiguous in place: Figure 18
+*Mobile Data Traffic*, Figure 22 *Complaints Handling*, Table 9 *Towers
+Constructed*, Table 10 *Fiber Rolled Out*.
+
+### Verification
+
+```
+Parts differing from the supplied original : word/document.xml only (109 parts)
+XML well-formed, all tags balanced         : yes
+Field characters                           : 110 begin / 110 end
+Drawings                                   : 93   unchanged
+Table captions                             : 44, numbered 1-44, sequential
+Figure captions                            : 63, numbered 1-63, sequential
+```
