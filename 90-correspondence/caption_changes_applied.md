@@ -951,3 +951,83 @@ Drawings                                   : 93   unchanged
 Table captions                             : 44, numbered 1-44, sequential
 Figure captions                            : 63, numbered 1-63, sequential
 ```
+
+---
+
+## Pass 12 — stray title lines left beside their own captions (16 Oct)
+
+### The question: did a graph disappear?
+
+**No.** `Trend of Internet Subscriptions` sits in exactly the same place in the
+file as supplied, with no image of its own:
+
+```
+original, 16 Oct                      delivered, before this pass
+  Total Internet Subscriptions  (H5)    Total Internet Subscriptions  (H5)
+  [image29 + the prose]                 [image29 + the prose]
+  Trend of Internet Subscriptions       Figure 19: Total Internet Subscriptions
+  International Internet Bandwidth      Trend of Internet Subscriptions
+                                        International Internet Bandwidth
+```
+
+`Trend of Internet Subscriptions` **is the chart's own title line**, the same
+device used throughout the ICT chapter. My caption pass took the section heading
+*Total Internet Subscriptions* instead and inserted it above that line, leaving
+the real title stranded underneath. The reading was correct: badly renamed.
+
+**Fixed.** Figure 19 now reads **Trend of Internet Subscriptions**, the
+document's own wording, and the stranded line is gone. The heading *Total
+Internet Subscriptions* still organises the subsection, so nothing is repeated.
+
+### The same thing in four more places
+
+Checking every caption against the lines around it found bare title lines that
+the caption beside them now repeated word for word — the title printing twice
+within three lines. All four removed; the caption carries the wording:
+
+| Removed line | Caption that already says it |
+|---|---|
+| Population Served by Licensed Rural Water Operators, by District, FY 2025/26. | Figure 33 |
+| Bilateral and Multilateral Agreements Advanced in FY 2025/26 | Table 23 |
+| MOUs Proposed for Signature at GC70 | Table 24 |
+| Proposed Bilateral Meetings | Table 25 |
+
+### One left deliberately
+
+`City of Kigali Fare Structure` also repeats Table 21's caption, but it is **not
+only a title** — it heads the two fare bullets as well:
+
+```
+City of Kigali Fare Structure        <- also heads the bullets
+  • Base Rate: FRW 59.28/km
+  • Fare = Base Rate × Multiplier × Distance
+Table 21: City of Kigali Fare Structure
+[fare table]
+```
+
+Removing it would leave the bullets with no heading, so it stays.
+
+### Worth knowing, not changed
+
+Ten captions repeat the **heading** directly above them — Figures 13, 14, 15,
+16, 17, 18, 42, 43 and Table 44, where the heading and the caption are
+word-for-word identical (*Trend of Fixed broadband by speed*, *Mobile Data
+Traffic*, *Gross contract model performance*, and so on).
+
+That is a different case: those are real headings carrying the section
+structure, not stray lines, and removing them would change the contents page.
+It is common enough in annual reports to leave as is, but the repetition is
+visible on the page. Say the word and the captions can be made more specific
+than their headings instead.
+
+### Verification
+
+```
+Parts differing from the supplied original : word/document.xml only (109 parts)
+XML well-formed, all tags balanced         : yes
+Field characters                           : 110 begin / 110 end
+Drawings                                   : 93   unchanged - no image touched
+Table captions                             : 44, numbered 1-44, sequential
+Figure captions                            : 63, numbered 1-63, sequential
+Bare title lines duplicating a caption     : 1 left, by design (Table 21)
+```
