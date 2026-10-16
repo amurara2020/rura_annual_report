@@ -110,3 +110,36 @@ Captions only. No body text, table data, image, heading or anything else was cha
 | **Figure 57** | Bilateral Meeting between Rwanda and ROSTECHNADZOR Delegations |
 | **Figure 58** | RURA Delegation during the IAEA Integrated Nuclear Infrastructure Review (INIR) Mission |
 | **Figure 59** | Monthly Type Approvals and Rejection Rate, FY 2025-2026 |
+
+---
+
+## List of Figures and List of Tables — now generate
+
+**A defect found while doing this:** the three front-matter fields were **three identical copies of the table of contents**. All carried `TOC \t "Heading 1,1,…"`, so updating fields would have printed the chapter list three times. The List of Figures and List of Tables had never been set up.
+
+Now:
+
+| Field | Was | Is |
+| :-- | :-- | :-- |
+| Table of Contents | `TOC \t "Heading 1,1,…"` | unchanged |
+| List of Figures | `TOC \t "Heading 1,1,…"` | `TOC \h \z \c "Figure"` |
+| List of Tables | `TOC \t "Heading 1,1,…"` | `TOC \h \z \c "Table"` |
+
+Those switches collect captions by **sequence identifier**, which the captions did not carry. Each of the 103 captions now contains a `SEQ Table` or `SEQ Figure` field in place of its literal number.
+
+**Side benefit: numbering is now self-maintaining.** Insert a table later and the rest renumber on update, instead of the sequence breaking again.
+
+Caption text, titles, order and paragraph styles are unchanged.
+
+### To populate the pages
+
+Open in Word → `Ctrl+A` → `F9`. If prompted, choose **Update entire table**. All three lists build with page numbers.
+
+Page numbers can only come from Word — they depend on pagination, which cannot be computed outside it.
+
+### Verified before delivery
+
+- XML well-formed; `fldChar` begin/separate/end balanced at 106 each
+- 44 `SEQ Table` and 59 `SEQ Figure` fields, matching the caption counts exactly
+- Captions still sequential, Tables 1–44 and Figures 1–59
+- `word/document.xml` the only part differing from the original; zip intact at 109 parts
