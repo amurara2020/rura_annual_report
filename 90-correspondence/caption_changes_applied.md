@@ -404,3 +404,176 @@ Paragraphs changed in total                : 168
    Transport narrative elsewhere gives 42,258 → 58,561 for the same comparison.
    Two different pairs of numbers for the same thing — this one needs the
    Transport department, not an editor.
+
+---
+
+## Pass 6 — heading levels, split headings, Nuclear AT A GLANCE (16 Oct)
+
+### The rule applied
+
+```
+2            Heading 1
+2.1          Heading 2
+2.1.1        Heading 3
+2.1.1.1      Heading 4
+a.           Heading 5
+```
+
+Unnumbered named subheads take one level below their numbered parent; where
+they were themselves nested (Water's *Urban and Peri-Urban → Operators*), the
+nesting is preserved. 37 changes in all.
+
+### Split headings merged
+
+Both banner headings were two separate paragraphs, so each would have appeared
+twice in the contents page. Each is now **one heading containing a line break**
+— two lines on the page, one entry in the contents:
+
+- `2.1 STATUS OF ICT, BROADCASTING` + `AND POSTAL SERVICES`
+- `2.5 STATUS OF NUCLEAR SAFETY AND` + `RADIATION PROTECTION`
+
+A space was inserted before each break. Without it the contents page would have
+read *"NUCLEAR SAFETY ANDRADIATION PROTECTION"*, since a line break collapses
+there.
+
+### Levels corrected
+
+| Heading | Was | Now |
+|---|---|---|
+| 2.5 STATUS OF NUCLEAR SAFETY AND RADIATION PROTECTION | Heading 1 | **Heading 2** |
+| 2.2.1 Sector Profile · 2.2.2 Regulatory Environment | Heading 2 | **Heading 3** |
+| 2.4.1 Sector Profile · 2.4.2 Regulatory Environment | Heading 2 | **Heading 3** |
+| 2.2.2.1 Legal and Regulatory Framework | Heading 3 | **Heading 4** |
+| 2.4.2.1 / 2.4.2.2 / 2.4.2.3 | Heading 3 | **Heading 4** |
+| 2.3.3 Tariffs | Heading 4 | **Heading 3** |
+| Six nuclear key messages (*1. Protecting Patients…* to *6. Investing in Rwandan Expertise*) | Heading 1 | **Heading 5** |
+| Development of the National EPR Plan · INSServ Preparatory Workshop · Hosted the Regional Workshop | Heading 3 | **Heading 5** |
+| Consumer Awareness Campaigns · Television and Radio Programs | Heading 4 | **Heading 5** |
+| International Cooperation and Capacity Strengthening | Heading 4 | **Heading 3** |
+| a. Fuel storage capacity · b. Liquid fuel imports | List paragraph | **Heading 5** |
+
+**Six empty paragraphs carrying a Heading style** were returned to body text.
+Each would have produced a blank line in the contents page.
+
+### Two numbers supplied, so the levels could be right
+
+Two headings sat unnumbered among numbered siblings, which left their level
+undefinable. Both now follow the pattern the other sectors use:
+
+- Energy: `Strategic Regulatory Initiatives` → **2.2.2.2**, and `Tariffs`
+  moves from 2.2.2.2 to **2.2.2.3**. Energy now matches ICT and Transport:
+  *.2.1 Legal and Regulatory Framework, *.2.2 Strategic Regulatory Initiatives,
+  *.2.3 Tariffs.
+- Transport: `Compliance Monitoring and Enforcement` → **2.4.5**, matching
+  2.1.5, 2.3.6 and 2.5.5.
+
+### Result
+
+```
+Total headings                               : 130
+Empty headings                               : 0  (was 6)
+Level skips (e.g. Heading 2 straight to 4)   : 0
+Numbered headings whose level disagrees with
+  their number depth                         : 0
+```
+
+The outline now runs 2.1 → 2.5.5 with every level matching its number depth.
+
+### Nuclear AT A GLANCE rebuilt to the common format
+
+The four other sectors all use the same card recipe, down to the typography:
+
+```
+label        9 pt bold, grey  #5B6573
+value       18 pt bold, blue  #004589
+change       8 pt bold, green #4E7A12      ▲ +13.5%  ·  improved
+comparator   7 pt       grey  #5B6573      FY 2024/25: 1,768,830
+```
+
+Nuclear was the only sector that put the **value above the label**, used its own
+28 pt / #0B4A7F type, grouped its cards under two extra labels, and carried **no
+KEY MESSAGES block at all**. Now:
+
+1. **Six cards rebuilt** label-above-value in the common typography. The label
+   wording is the document's own — only the initial letter was capitalised:
+   *Inspections of facilities using radiation* (126) · *Districts covered in the
+   Eastern and Southern Provinces* (15) · *Border entry points checked for
+   radiation detection readiness* (6) · *License applications received and
+   processed* (46) · *Licenses issued, incl. Rwanda's first cyclotron* (37) ·
+   *Medical facilities licensed (hospitals, clinics, cancer and nuclear medicine
+   centers)* (14).
+2. **The group labels** *PROTECTING PEOPLE* and *SAFE LICENSING* were emptied.
+   The paragraphs themselves stay — they keep the two card tables apart, and
+   Word would merge the tables into one if they became adjacent.
+3. **A KEY MESSAGES block was added**, four bullets in the Energy/Transport
+   style. Every bullet is drawn from wording already in §2.5 — no figure is new:
+   - bullet 1 is the §2.5.4 inspection sentence, verbatim
+   - bullet 2 combines the 46-applications and 37-licences cards
+   - bullet 3 combines the EPR Plan and simulation-exercise bullets
+   - bullet 4 combines the 2-agreements and 6-further-agreements bullets
+4. **The label itself was normalised.** Two sectors said *ICT SECTOR AT A
+   GLANCE* / *TRANSPORT SECTOR AT A GLANCE*, three said *AT A GLANCE*. All five
+   now read **AT A GLANCE**; the banner above already names the sector.
+
+### What the Nuclear department still has to supply
+
+The nuclear cards carry **two of the four lines**. The change line and the
+comparator line cannot be built, because **no FY 2024/25 nuclear figures exist
+anywhere in the document.** Rather than print placeholder dots, those two lines
+were left out. Six prior-year numbers would complete the parallel:
+
+| Indicator | FY 2025/26 | FY 2024/25 needed |
+|---|---|---|
+| Inspections of facilities using radiation | 126 | ? |
+| Districts covered | 15 | ? |
+| Border entry points checked | 6 | ? |
+| License applications received and processed | 46 | ? |
+| Licenses issued | 37 | ? |
+| Medical facilities licensed | 14 | ? |
+
+Figure 44 (*Valid License, Five-Year Summary, FY 2021/22 to FY 2025/26*) may
+already hold the licence series — but it is a chart, and its underlying numbers
+are not in the text.
+
+### Verification
+
+```
+Parts differing from the supplied original : word/document.xml only (109 parts)
+XML well-formed                            : yes
+w:tbl / w:tr / w:tc / w:p / w:r            : all balanced
+Field characters                           : 106 begin / 106 end
+Adjacent tables that Word would merge      : 0
+Table captions                             : 44, numbered 1-44, sequential
+Figure captions                            : 59, numbered 1-59, sequential
+Captions sitting directly on their object  : 101 of 103
+```
+
+### One decision left, and it matters for the contents page
+
+The contents-page field is currently set to list **Heading 1 through Heading 6**:
+
+```
+TOC \h \u \z \t "Heading 1,1,Heading 2,2,Heading 3,3,Heading 4,4,Heading 5,5,Heading 6,6,"
+```
+
+With the levels now correct, that means every named subhead appears — around
+130 entries, including *Operators*, *Subscriptions*, *Mobile Data Traffic* and
+the six nuclear key messages. For a report this size, levels 1 to 3 is the
+normal choice and would give roughly 45 entries. The change is one switch:
+
+```
+TOC \h \u \z \t "Heading 1,1,Heading 2,2,Heading 3,3,"
+```
+
+Not applied — say the word and it takes a minute.
+
+### Three further observations, unchanged
+
+- The Water card *Water production per subscription* has its change line and
+  comparator merged into one paragraph: `▼ −9.6%  · declined FY 2024/25: 217 m³`.
+- Transport has two of the same: `▲ +15.3%   improvedFY 2024/25: 190,000`
+  (missing space too) and `Expansion of transport regulatory coverage 96,022`,
+  where the label and value share one paragraph.
+- Transport's first card is labelled with a sentence — *The transition to
+  electric mobility is accelerating.* — where every other card uses an
+  indicator name, and its change reads `▲ +344.12` with no unit.
