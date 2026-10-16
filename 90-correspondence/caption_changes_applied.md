@@ -577,3 +577,109 @@ Not applied — say the word and it takes a minute.
 - Transport's first card is labelled with a sentence — *The transition to
   electric mobility is accelerating.* — where every other card uses an
   indicator name, and its change reads `▲ +344.12` with no unit.
+
+---
+
+## Pass 7 — contents page limited to levels 1–3, and a graph audit (16 Oct)
+
+### Contents page
+
+```
+was : TOC \h \u \z \t "Heading 1,1,Heading 2,2,Heading 3,3,Heading 4,4,Heading 5,5,Heading 6,6,"
+now : TOC \h \u \z \t "Heading 1,1,Heading 2,2,Heading 3,3,"
+```
+
+About 45 entries instead of roughly 130. The List of Figures and List of Tables
+fields are untouched.
+
+---
+
+## Graph audit
+
+### First: nothing has been lost in the editing
+
+| | media files | chart/photo placements | r:embed references | broken links |
+|---|---|---|---|---|
+| version you shared, 16 Oct | 74 | 93 | 93 | 0 |
+| file delivered now | 74 | 93 | 93 | 0 |
+
+Every media part is still referenced, every reference still resolves, and no
+image is orphaned in the package. **Comparing by content hash against the 8
+October draft: nothing was removed between the two versions — three images were
+added.** So the loss did not happen between those drafts either.
+
+The reviewer is right that graphs are missing, but they were already missing in
+the file as supplied. There are four separate problems.
+
+### 1. Three figure captions have no graph at all
+
+| | Caption | What is actually there |
+|---|---|---|
+| **Figure 45** | Applications by License Type, New and Renewal, FY 2025/26 | sits between Figure 44's chart and Figure 46's, with only a `Source: RURA` line; no image |
+| **Figure 47** | Field Verification of Industrial Radiography and Nuclear-Gauge Licensees | surrounded entirely by bullet text; no image anywhere near |
+| **Figure 50** | Nuclear and Radiological Emergency Response Simulation Exercise | the caption is immediately followed by the full-page chapter divider; the photograph was never placed |
+
+These are the three the reviewer will have noticed. **The charts and the
+photograph have to be supplied — they are not recoverable from the file.**
+
+### 2. Four charts carry no figure number, so they are absent from the List of Figures
+
+| Image | Size | Where |
+|---|---|---|
+| `image40.png` | 10.0 × 5.7 cm | §2.3.4 Licensing (Water). It even has its own title line — *Trends of Valid Licenses and Authorizations Issued* — and a `Source: RURA` beneath it, but no Figure number |
+| `image62.png` | 15.5 × 8.5 cm | §2.5.4, after the *126 inspections were carried out* bullet |
+| `image63.png` | 15.3 × 6.7 cm | §2.5.4, under *3. Stronger Rules, Aligned with International Standards (70%)* |
+| `image8.png` | 17.5 × 10.7 cm | *Overview of RURA*. May be intended as decoration rather than an exhibit |
+
+Numbering these would renumber every figure after them, and would change the
+List of Figures, so it has not been done.
+
+### 3. One chart is printed twice
+
+`image64.png` (*Radiation Inspections by Province*, 18.0 × 8.5 cm) appears in
+**two consecutive paragraphs**, between the Figure 48 and Figure 49 captions.
+The same chart prints twice on the page.
+
+### 4. Figure 9 has two different charts under one caption
+
+`image19.png` (15.9 × 11.1 cm) and `image20.png` (11.9 × 7.3 cm) sit in the same
+paragraph, with *Figure 9: Fixed telephone penetration* beneath both. The
+heading above them reads *Trend in Fixed Telephone Subscriptions per 100
+inhabitants*, so the first chart is the subscriptions series and is unnumbered.
+
+*(Figures 51–53 and Figure 57 also have images in pairs, but there each image
+has its own caption, or the pair is two photographs of one event — those are
+fine.)*
+
+### The arithmetic
+
+```
+Distinct charts and photographs in the document : 61
+Placements of them                              : 62   (image64 placed twice)
+Figure captions                                 : 59
+Captions with no exhibit                        :  3   (Figures 45, 47, 50)
+Exhibits with no caption                        :  4   (+1 inside Figure 9's paragraph)
+```
+
+### What to do
+
+Only one of these needs the departments: **the three missing graphs (45, 47
+and 50)**. The other three are editing decisions I can apply in one pass as soon
+as you say which way:
+
+- number the four uncaptioned charts (every later figure renumbers, and the
+  List of Figures rebuilds itself on F9), or leave them unnumbered;
+- delete the duplicated copy of the inspections chart;
+- give the fixed-telephone subscriptions chart its own caption, splitting
+  Figure 9 into two.
+
+### Verification
+
+```
+Parts differing from the supplied original : word/document.xml only (109 parts)
+XML well-formed, all tags balanced         : yes
+Field characters                           : 106 begin / 106 end
+Table captions                             : 44, numbered 1-44, sequential
+Figure captions                            : 59, numbered 1-59, sequential
+Media files / references / broken links    : 74 / 93 / 0
+```
