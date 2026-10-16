@@ -826,3 +826,72 @@ Table captions                             : 44, numbered 1-44, sequential
 Figure captions                            : 64, numbered 1-64, sequential
 Captions sitting directly on their object  : 106 of 108
 ```
+
+---
+
+## Pass 10 — design elements carry no figure number (16 Oct)
+
+### The rule now applied
+
+A figure number marks a **data exhibit or a documentary photograph**. Anything
+that exists to carry the design does not get one.
+
+`Figure 1: RURA Vision, Mission, Values and Motto` has been removed. The
+vision/mission/values panel stays exactly where it is, as a design element.
+There are now **63 figures**, and the List of Figures no longer opens with it.
+
+### Every image in the document was checked against that rule
+
+I opened each one I could not classify from its dimensions alone. The result:
+
+**Design elements — no number, correct as they stand**
+
+| | |
+|---|---|
+| Cover artwork (`image1`, `image2`) | full-page background and the RURA wordmark |
+| Chapter dividers (`image7`, used ×5) | the A4 full-page panels before each chapter |
+| Vision/mission/values panel (`image8`) | the one just unnumbered |
+| Sector icon strip (`image3`–`image6`, `image9`) | 1.1 cm icons beside *THE SECTORS RURA REGULATES* |
+| AT A GLANCE card icons (`image10`, `image33`, `image39`, `image51`, `image59`) | 1.6 cm icons inside the KPI cards |
+
+**Everything else that carries a number is a genuine exhibit.** Four I checked
+by opening them, because the metadata alone was not conclusive:
+
+- `image22` — *Internet Service Provision*: horizontal bars, fixed broadband
+  subscriptions by ISP (Canal+ 42,517 · 50.52%, MTN 13,668, Liquid 10,301 …)
+- `image32` — *Complaints Handling*: stacked bar, 78 handled / 24 referred /
+  10 pending out of 112
+- `image37` — *Storage Capacity … against the National targets*: progress bar,
+  111.2 million operational against a 337 million litre target, gap 218.9 million
+- `image45` — *Operators*: bars of population served by district with an
+  operator-count column
+
+All four are data charts and keep their numbers. The photographs (NEISA, the
+two MoU signings, the ROSTECHNADZOR meeting, the INIR mission) are documentary
+records of the year, so they keep theirs too.
+
+### One case deliberately left alone
+
+**Figure 54 — *Nuclear and Radiological Emergency Response Simulation Exercise***
+currently sits immediately above a chapter divider, because **its photograph was
+never inserted**. The caption is therefore resting against a design element.
+
+It was **not** removed. Deleting it would hide a real gap rather than fix one —
+the photograph is still owed, and the caption is the only record that it is
+missing. It belongs with Figures 47 and 49 on the list of exhibits the
+departments must supply.
+
+### Verification
+
+```
+Parts differing from the supplied original : word/document.xml only (109 parts)
+XML well-formed, all tags balanced         : yes
+Field characters                           : 110 begin / 110 end
+Drawings / media files                     : 93 / 74   unchanged - nothing deleted
+Table captions                             : 44, numbered 1-44, sequential
+Figure captions                            : 63, numbered 1-63, sequential
+Exhibits 2.5 cm or larger with no number   : cover, 4 chapter dividers, the
+                                             vision/mission panel - all design
+Figure numbers with no exhibit             : Figure 47, Figure 49
+Figure numbers resting on a divider        : Figure 54 (photograph still owed)
+```
