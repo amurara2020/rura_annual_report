@@ -766,3 +766,63 @@ Table captions                             : 44, numbered 1-44, sequential
 Figure captions                            : 60, numbered 1-60, sequential
 Captions sitting directly on their object  : 102 of 104
 ```
+
+---
+
+## Pass 9 — the four uncaptioned exhibits numbered (16 Oct)
+
+Each image was opened and read before a caption was written for it. The titles
+below describe what is actually plotted; nothing was inferred from the
+surrounding text alone.
+
+| New number | Caption | What the image shows |
+|---|---|---|
+| **Figure 1** | RURA Vision, Mission, Values and Motto | The vision/mission/values panel in *Overview of RURA*: vision, three mission statements, seven values, and the motto *Inspiring Development* |
+| **Figure 29** | Trends of Valid Water and Sanitation Licenses, 2021/22–2025/26 | Bar chart, y-axis *Licences*: 353, 353, 319, 291, 327, with −9.6%, −8.8% and +12.4% change labels |
+| **Figure 51** | Radiation Inspections by Province and Facility Type, FY 2025/26 | Two donuts: Southern Province 80 (70 medical, 10 non-medical), Eastern Province 46 (29 medical, 17 non-medical) |
+| **Figure 52** | Rules Developed or Revised, and Consultations Held | Horizontal bars: stakeholder consultations 10, guidelines 4, strategies 4, regulations under development 3, standard operating procedures 2 |
+
+Each caption sits immediately below its image, with no text in between.
+
+### Two notes on wording
+
+- **Figure 29.** The title line already above the chart reads *Trends of Valid
+  Licenses and Authorizations Issued*. That wording was not used verbatim,
+  because it is almost identical to Figure 2 (*Trend of valid Licenses and
+  Authorizations*, the ICT chart) and the two would be indistinguishable in the
+  List of Figures. The caption names the sector instead, and the chart's own
+  y-axis says *Licences* only — no authorizations are plotted. The figures match
+  the body text above it: *"The sector had 327 valid licenses at the end of
+  FY 2025/26, up 12.4%"*.
+- **Figure 51.** The donut centres are labelled *facilities* while the companion
+  chart (Figure 54) and the body text both count *inspections*; 80 + 46 = 126,
+  70 + 29 = 99 and 10 + 17 = 27, which match the inspection totals exactly. The
+  caption follows the body text. **The chart's own internal label may need
+  correcting by whoever produced it.**
+
+**Figure 1 is an infographic, not a data chart.** It is numbered because it was
+on the list, and it now appears first in the List of Figures. If you would
+rather it stayed a design element, removing that one caption is a minute's work
+and shifts everything back by one.
+
+### Renumbering
+
+There are now **64 figures**. The sequence fields renumber themselves on
+Ctrl+A / F9; the cached numbers were refreshed as well, so the document reads
+correctly before the fields are updated. 64 cached numbers rewritten.
+
+The three captions still without an exhibit are now **Figure 48** (Applications
+by License Type), **Figure 50** (Field Verification) and **Figure 53**
+(Emergency Response Simulation photograph).
+
+### Verification
+
+```
+Parts differing from the supplied original : word/document.xml only (109 parts)
+XML well-formed, all tags balanced         : yes
+Field characters                           : 111 begin / 111 end
+Drawings / media files                     : 93 / 74   unchanged - nothing added or deleted
+Table captions                             : 44, numbered 1-44, sequential
+Figure captions                            : 64, numbered 1-64, sequential
+Captions sitting directly on their object  : 106 of 108
+```
