@@ -187,3 +187,61 @@ Either the image was never inserted, or the caption is left over from one that w
 
 - **Figure 25** is titled *"a. Fuel storage capacity"* and **Table 21** *"• Fare = Base Rate × Multiplier × Distance"* — both picked up a list item rather than a title when captions were first derived. Worth rewording.
 - The body contains **"Table ………presents"** and **"Table …………..shows"** — unfilled cross-references, pre-existing. Now that captions carry sequence fields, these can be replaced with live cross-references.
+
+---
+
+## Pass 4 — Figure 25, Table 21 and Figure 22 titles (16 Oct)
+
+### What was actually wrong
+
+These were not just badly worded titles. The caption prefix applied in pass 1
+had been written **over genuine document content**:
+
+| Where | Original content | What the caption prefix turned it into |
+|---|---|---|
+| 2.2.4.3 Liquid petroleum fuels | `a. Fuel storage capacity` (list item, paired with `b. Liquid fuel imports` below) | `Figure 25: a. Fuel storage capacity` |
+| 2.4.2 City of Kigali Fare Structure | `• Fare = Base Rate × Multiplier × Distance` (bullet, paired with `• Base Rate: FRW 59.28/km`) | `Table 21: • Fare = Base Rate × Multiplier × Distance` |
+
+Both paragraphs have been **restored to their original text** (plain runs, no
+sequence field), keeping their paragraph and run properties.
+
+### Captions inserted in the right place
+
+Both titles are taken verbatim from wording the document already supplies —
+nothing was invented:
+
+- **Figure 25: Storage Capacity for liquid petroleum fuels against the National targets**
+  — taken from the placeholder caption embedded in the image paragraph itself.
+  Inserted immediately above the image.
+- **Table 21: City of Kigali Fare Structure** — taken from the heading
+  immediately above the table. Inserted immediately above the table.
+
+### Figure 22 — same defect, same fix
+
+`Figure 22: Licensing` had picked up the section heading *2.2.3 Licensing*
+rather than a title. The image carries its own wording, so the caption is now
+**Figure 22: Trends of valid licenses in energy** (the document's spelling,
+verbatim).
+
+### Still outstanding — needs a decision
+
+Two image paragraphs carry their old placeholder caption *inside* the image
+paragraph, so that wording now appears twice on the page:
+
+- `Figure ……. : Trends of valid licenses in energy` (above Figure 22's caption)
+- `Figure …….. : Storage Capacity for liquid petroleum fuels against the National targets` (below Figure 25's caption)
+
+Removing them is a content deletion, so it has not been done. Say the word and
+both lines come out in one pass.
+
+### Verification
+
+```
+Parts differing from the supplied original : word/document.xml only (109 parts, list identical)
+XML well-formed                            : yes
+Field characters balanced                  : 106 begin / 106 end
+Namespace prefix leaks                     : 0
+Table captions                             : 44, numbered 1–44, sequential
+Figure captions                            : 59, numbered 1–59, sequential
+Captions sitting directly on their object  : 101 of 103
+```
