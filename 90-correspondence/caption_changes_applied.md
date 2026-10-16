@@ -45,8 +45,8 @@ Captions only. No body text, table data, image, heading or anything else was cha
 | **Table 39** | New and Renewed Radiocommunication Licenses for FM Broadcasting |
 | **Table 40** | Statistical tables |
 | **Table 41** | Statistical tables — Water indicator |
-| **Table 42** | [title to be supplied] |
-| **Table 43** | [title to be supplied] |
+| **Table 42** | Energy indicators |
+| **Table 43** | Transport licences by category |
 | **Table 44** | Transport Licenses Details |
 
 | Label | Title |
