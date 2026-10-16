@@ -143,3 +143,47 @@ Page numbers can only come from Word — they depend on pagination, which cannot
 - 44 `SEQ Table` and 59 `SEQ Figure` fields, matching the caption counts exactly
 - Captions still sequential, Tables 1–44 and Figures 1–59
 - `word/document.xml` the only part differing from the original; zip intact at 109 parts
+
+---
+
+## Captions moved to sit against their table or figure
+
+Checked every caption by binding it to the object it physically touches, the way a reader does. **95 of 103 were already correct. Eight were floating**, including the Table 10 case.
+
+**Six moved** so the caption now sits directly against its object with no text in between:
+
+| Caption | Was separated by |
+| :-- | :-- |
+| Table 10: Fibre Rolled Out | "The table below provides information on the fiber infrastructure…" |
+| Table 14: Trend of valid Gas and Downstream Petroleum Licences | "Table ………presents the trends of valid licences…" |
+| Table 15: Trend of valid electricity licences/authorizations | "Table ………….. shows the trends in valid licences…" |
+| Figure 25: a. Fuel storage capacity | "Rwanda's total installed storage capacity for liquid petroleum…" |
+| Figure 42: The Seven Most Recurring Transport Offences | "Source: RURA (Table 42)." |
+| Figure 50: Nuclear and Radiological Emergency Response Simulation | "Acquisition of Radiation Detection Equipment & PPEs" |
+
+Table 10 now reads:
+
+```
+Table 9: Towers Constructed
+[towers table]
+
+The table below provides information on the fiber infrastructure…
+Table 10: Fibre Rolled Out
+[fibre table]
+```
+
+Only the caption paragraph moved. No text was edited, added or deleted.
+
+### Two captions have no figure to attach to
+
+Neither is a spacing problem — the figure appears to be absent:
+
+- **Figure 45: Applications by Licence Type, New and Renewal, FY 2025-2026** — sits after a `source: RURA` line; the nearest image already belongs to Figure 44.
+- **Figure 47: Field Verification of Industrial Radiography and Nuclear-Gauge Licensees** — surrounded entirely by bullet text, no image anywhere near it.
+
+Either the image was never inserted, or the caption is left over from one that was removed.
+
+### Three other things noticed, not changed
+
+- **Figure 25** is titled *"a. Fuel storage capacity"* and **Table 21** *"• Fare = Base Rate × Multiplier × Distance"* — both picked up a list item rather than a title when captions were first derived. Worth rewording.
+- The body contains **"Table ………presents"** and **"Table …………..shows"** — unfilled cross-references, pre-existing. Now that captions carry sequence fields, these can be replaced with live cross-references.
