@@ -683,3 +683,86 @@ Table captions                             : 44, numbered 1-44, sequential
 Figure captions                            : 59, numbered 1-59, sequential
 Media files / references / broken links    : 74 / 93 / 0
 ```
+
+---
+
+## Pass 8 — Figure 9 split; the "duplicate" chart is not a duplicate (16 Oct)
+
+### Correction to Pass 7: the inspections chart must not be deleted
+
+I reported `image64.png` as the same chart placed twice. **That was wrong, and
+deleting either copy would have destroyed half the exhibit.**
+
+Opening the file shows a single two-panel chart — *Radiation Inspections by
+Province*, Southern Province above, Eastern Province below. The document places
+the one image twice with complementary crops:
+
+```
+first placement   <a:srcRect b="55111"/>            shows the top panel    (Southern Province)
+second placement  <a:srcRect t="54180" b="819"/>    shows the bottom panel (Eastern Province)
+```
+
+Two halves of one chart, deliberately split so they flow as separate blocks.
+**Nothing was deleted.** My Pass 7 audit counted placements, not crops, and the
+count alone could not tell the two cases apart.
+
+### Figure 9 split — both charts now carry their own number
+
+Opening the two images settled which was which:
+
+- `image19.png` — fixed telephone subscriptions **by operator** (Airtel, MTN,
+  Liquid Telecom, BSC), 2021/22–2025/26, four panels
+- `image20.png` — fixed telephone **penetration**, subscriptions per 100
+  inhabitants, 2021/22–2025/26
+
+They were sitting in one paragraph, under the §*Fixed telephone penetration*
+heading, sharing the caption *Figure 9: Fixed telephone penetration*. So the
+subscriptions chart was both unnumbered and in the wrong section.
+
+The paragraph was split into two. The subscriptions chart moved up into
+§*Fixed telephone subscriptions*, directly beneath that section's own title line
+*Trend in Fixed Telephone Subscription*, with its caption immediately below it.
+The penetration chart stayed where it was and kept its caption.
+
+```
+2.1.4.3 Fixed Telephone Services
+  Fixed telephone subscriptions
+    In 2026, fixed telephone services were provided by ...
+    Trend in Fixed Telephone Subscription
+    [image19]
+    Figure 9: Trend in Fixed Telephone Subscriptions by Operator      <- new
+    The number of fixed telephone subscriptions increased from ...
+  Fixed telephone penetration
+    In FY 2025/26, fixed telephone subscriptions increased by 5.6% ...
+    Trend in Fixed Telephone Subscriptions per 100 inhabitants.
+    [image20]
+    Figure 10: Fixed telephone penetration                            <- was Figure 9
+```
+
+The new caption follows the wording pattern of Figure 3 (*Mobile-Cellular
+Subscriptions and Market Share by Operator*), since the chart is a per-operator
+breakdown. No text was removed.
+
+### Renumbering
+
+Every figure from the old Figure 9 onwards moves up by one. **There are now 60
+figures.** The sequence fields do this themselves on Ctrl+A / F9; the cached
+numbers were refreshed too, so the document reads correctly even before the
+fields are updated. 51 cached numbers rewritten.
+
+The two captions still without an exhibit are now **Figure 46** (Applications by
+License Type) and **Figure 48** (Field Verification) — the same two as before,
+renumbered. Figure 51 (Emergency Response Simulation) likewise still has no
+photograph.
+
+### Verification
+
+```
+Parts differing from the supplied original : word/document.xml only (109 parts)
+XML well-formed, all tags balanced         : yes
+Field characters                           : 107 begin / 107 end   (was 106; one new caption)
+Drawings / media files                     : 93 / 74   unchanged - nothing deleted
+Table captions                             : 44, numbered 1-44, sequential
+Figure captions                            : 60, numbered 1-60, sequential
+Captions sitting directly on their object  : 102 of 104
+```
