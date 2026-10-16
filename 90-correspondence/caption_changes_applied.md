@@ -245,3 +245,162 @@ Table captions                             : 44, numbered 1–44, sequential
 Figure captions                            : 59, numbered 1–59, sequential
 Captions sitting directly on their object  : 101 of 103
 ```
+
+---
+
+## Pass 5 — Tier A and Tier B corrections applied (16 Oct)
+
+### A1 · Section numbering — fourteen headings renumbered
+
+| Was | Now | Heading |
+|---|---|---|
+| 2.2.4.6 | 2.1.4.7 | Towers and fibre infrastructure |
+| 2.2.5.1 | 2.1.5.1 | Compliance Inspections |
+| 3.3.5 | 2.3.5 | Market Performance |
+| 3.3.5.1 | 2.3.5.1 | Water sector |
+| 3.3.5.2 | 2.3.5.2 | Sanitation sector |
+| 3.3.6 | 2.3.6 | Compliance Monitoring and Enforcement |
+| 3.3.6.1 | 2.3.6.1 | Inspected and reviewed water supply expansion projects |
+| 3.3.6.2 | 2.3.6.2 | Consumer education and awareness |
+| 2.4.1.1 | 2.4.2.1 | Legal and Regulatory Framework |
+| 2.4.1.2 | 2.4.2.2 | Strategic regulatory initiatives |
+| 2.4.1.3 | 2.4.2.3 | Tariffs |
+| 2.4.5 | 2.4.4 | Market Performance |
+| 2.5.2.3 | 2.5.4 | Market Performance |
+| 2.5.4 | 2.5.5 | Compliance Monitoring and Enforcement |
+
+The numbering now runs unbroken from 2.1 to 2.5.5 with no gaps and no
+duplicates. Verified by walking the headings in document order.
+
+### A2 · Three cached field prompts cleared
+`Right-click and choose Update Field to build the table of contents / list of
+figures / list of tables` no longer appear as body text. The fields themselves
+are untouched, so **Ctrl+A then F9 is now mandatory** before printing or
+exporting: those three pages are blank until the fields are built.
+
+### A3 · Internal QA notes removed
+- Deleted: `CHECK  March and April 2026 show identical values (228 approved, 39 rejected). Confirm before publication.`
+- Amended: a source line reading `… see CHECK notes.` now reads `… see data notes.`
+
+**The underlying question is still open.** March and April 2026 do carry
+identical type-approval figures (228 approved, 39 rejected). Removing the note
+removed the note, not the discrepancy.
+
+### A4 · Cover draft stamp removed
+`WORKING DRAFT · DESIGN VERSION · based on the draft of 22 September 2026`
+deleted. The cover now reads: RURA / Annual Report / Financial Year 2025/26 /
+1 July 2025 – 30 June 2026.
+
+### A5 · Typography
+- Eleven multiple-space defects closed, including inside headings
+  (`2.1 STATUS OF  ICT`, `2.5.3   Licensing`, `THE SECTORS  RURA REGULATES`,
+  `Higher Daily  Bus Revenue`, `Capacity   (MT)`, `b.  Liquid fuel imports`)
+- Deliberate multiple spaces left alone: bullet markers (`›`, `■`, `•`, `·`),
+  the KPI status cards (`▲ +9.8%  ·  improved`) and the two-column system
+  listings (`… Management System   licensing.rura.rw`)
+- `inspected at six locations  Nyabugogo, CHIC, UTC…` → a colon inserted, which
+  is what the missing punctuation was standing in for
+- Twelve runs of three or more blank paragraphs collapsed to one; 25 blank
+  paragraphs removed. Paragraphs carrying a page break, a section break or an
+  image were preserved, so the eight explicit page breaks are intact
+- Table 8 title: `Postal and Courier Items per Licenses Type(bar chart of
+  category and volume)` → **Postal and Courier Items per License Type**
+  (missing space; and the parenthetical described a chart, in a table title)
+- A column header in the Water annex read `license_name` — a raw database
+  field name. Now **License**
+
+### A6 · Heading case
+- `2.4 STATUS OF Transport` → `2.4 STATUS OF TRANSPORT`, matching 2.1, 2.2, 2.3 and 2.5
+
+### B1 · Fiscal year — one format throughout
+Twenty variants reduced to the single form `FY 2025/26`:
+
+```
+FY 2025/26  63      FY 2026/27   6
+FY 2024/25  38      FY 2022/23   3
+FY 2021/22   6      FY 2023/24   3
+```
+
+Also normalised where the year is spelled out in prose — `financial year
+2025–2026`, `the 2024–2025 financial year`, `the 2025–2026 fiscal year`,
+`Financial Year 2025-2026` — in every case **only the year token changed**; no
+words were added or removed. Multi-year plan spans (NST2 2024–2029, RURA
+Strategic Plan 2022–2027, Second Phase 2024–2029) were deliberately left alone:
+they are not fiscal years.
+
+### B2 · Currency — FRW throughout
+`Frw` (15), `RWF` (3) and `frw` normalised to **FRW**; 27 occurrences, one form.
+
+The acronyms list already carried this entry as `RWF — Rwandan Franc (also
+written Frw)`, filed under R. Normalising the tokens turned its own gloss into
+nonsense (*"also written FRW"*), so that row was removed and replaced with
+**FRW — Rwandan Franc**, filed correctly between FM and FY. The list is 90 rows,
+as before.
+
+### B3/B4 · One spelling register
+The document's working register is already American for every regulatory term
+it uses often — `authorization` 21 against `authorisation` 1, `organization` 7
+against zero British, `fiber` 8 against `fibre` 1, `license` 45 against
+`licence` 16 — so American is the register applied:
+
+```
+licenses / license / Licenses / License   19     centers      4
+programs / program                         6     fiber/Fiber  2
+authorizations                             1     urbanization 1
+```
+
+**Proper names were not touched.** Fifteen capitalised `Centre` occurrences are
+part of names — Centre Hospitalier Universitaire de Butare, International Water
+and Sanitation Centre (IRC WASH), Network Operations Centre, One Stop Centre,
+KIGALI CONVENTION CENTRE Ltd, the IAEA Collaborating Centre, the Tier III Data
+Centre License — and keep their own spelling. Only the four generic lower-case
+`centres` became `centers`. `Capacity Building Programme` likewise kept its
+capitalised spelling as a programme name; the six lower-case `programme`
+occurrences became `program`.
+
+One consequence worth stating: **Table 43, whose title you supplied as
+"Transport licences by category", now reads "Transport licenses by category"**
+under this register. Say the word and it goes back.
+
+### B5 · Section title
+`2.2.2.2 Tariff` → `2.2.2.2 Tariffs`, matching 2.1.2.3, 2.3.3 and 2.4.2.3.
+
+### Verification
+
+```
+Parts differing from the supplied original : word/document.xml only (109 parts, list identical)
+XML well-formed                            : yes
+w:tbl / w:tr / w:tc / w:p / w:r            : all balanced
+Field characters                           : 106 begin / 106 end
+Namespace prefix leaks                     : 0
+Table captions                             : 44, numbered 1–44, sequential
+Figure captions                            : 59, numbered 1–59, sequential
+Captions sitting directly on their object  : 101 of 103
+Section numbering 2.1 → 2.5.5              : continuous, no gaps or duplicates
+Fiscal year formats                        : 1 (was 20)
+Currency forms                             : 1 (was 3)
+licence/licences remaining                 : 0
+Draft stamp / QA notes / field prompts     : 0
+Paragraphs changed in total                : 168
+```
+
+### Found while doing this work — not changed, needs your decision
+
+1. **Heading levels are inconsistent, which will distort the contents page.**
+   `2.5 STATUS OF NUCLEAR SAFETY AND` is Heading 1 while 2.1–2.4 are Heading 2.
+   `2.2.1`, `2.2.2`, `2.4.1`, `2.4.2` are Heading 2 while their counterparts
+   `2.1.1`, `2.1.2`, `2.3.1` are Heading 3.
+2. **Two sector headings are split across two paragraphs**, so each will appear
+   twice in the contents page: `2.1 STATUS OF ICT, BROADCASTING` + `AND POSTAL
+   SERVICES`, and `2.5 STATUS OF NUCLEAR SAFETY AND` + `RADIATION PROTECTION`.
+3. **Six nuclear key messages are styled Heading 1** — *1. Protecting Patients,
+   Workers, and Communities* through *6. Investing in Rwandan Expertise (40%)* —
+   so they will appear in the contents page as chapters in their own right.
+4. **"Ready Respond in an Emergency"** (key message 4) is missing a word.
+5. `fiscal year` is used once where the rest of the document says
+   `financial year`.
+6. **"the Authority had 64,993 valid transport licenses"** sits in a paragraph
+   that also says `48,365 during the 2024/25 financial year`, while the
+   Transport narrative elsewhere gives 42,258 → 58,561 for the same comparison.
+   Two different pairs of numbers for the same thing — this one needs the
+   Transport department, not an editor.

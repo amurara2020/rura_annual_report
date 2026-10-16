@@ -1,6 +1,10 @@
 # Proposed corrections — FY2025/26 Annual Report
 **16 October 2026 · Data Analytics Team**
 
+> **Status, 16 October:** Tier A and Tier B are applied and delivered. See
+> `caption_changes_applied.md`, Pass 5, for exactly what changed. Tier C items
+> remain open.
+
 Every item below was found by scanning the document you supplied. Counts are
 actual. Nothing here invents a figure, a target or an explanation. Approve by
 item number; anything not approved stays untouched.
