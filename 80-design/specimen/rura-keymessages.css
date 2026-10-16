@@ -1,0 +1,105 @@
+/* ===========================================================================
+   KEY MESSAGES — four proposed treatments
+   ---------------------------------------------------------------------------
+   The block sits under the At-a-Glance cards on each sector opener.
+   Current treatment: identical black squares (■) on every line.
+
+   The problem it should solve: key messages carry findings of different
+   valence. "Penetration passed 100" is an achievement; "fixed broadband
+   declined" is a concern. An identical bullet on both tells the reader
+   nothing, and the reader has to parse each sentence to work out which is
+   which. Standard §11 already requires status to be carried by symbol +
+   word + colour; key messages are the one place that rule is not applied.
+
+   All four options use the existing tokens. No new colours.
+   =========================================================================== */
+
+.km-label {
+  font-size: var(--t-micro); font-weight: 700; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--slate); margin-bottom: var(--s-2);
+}
+.km { list-style: none; margin: 0; padding: 0; }
+.km .good  { --km: var(--st-achieved); }
+.km .watch { --km: var(--st-attention); }
+.km .worse { --km: var(--st-failed); }
+
+/* ---- OPTION 1 · STATUS-RULED ------------------------------------------- */
+/* Closest to what exists. One change: the rule and the status word carry
+   the valence, so the block is scannable before it is read. */
+.km-1 li {
+  border-left: .9mm solid var(--km); padding: 0 0 0 var(--s-2);
+  margin-bottom: var(--s-2); display: flex; gap: var(--s-2); align-items: baseline;
+}
+.km-1 .text { flex: 1 1 auto; font-size: var(--t-body); line-height: 1.4; }
+.km-1 .text b { color: var(--navy); font-weight: 700; }
+.km-1 .tag {
+  flex: 0 0 auto; font-size: var(--t-micro); font-weight: 700;
+  text-transform: uppercase; letter-spacing: .1em; color: var(--km);
+}
+
+/* ---- OPTION 2 · FIGURE-ANCHORED ---------------------------------------- */
+/* The number carries the message. Strongest for a statistics report, and it
+   matches the KPI-card language already used directly above on the page. */
+.km-2 li {
+  display: grid; grid-template-columns: 26mm 1fr; column-gap: var(--s-3);
+  align-items: start; padding-bottom: var(--s-2); margin-bottom: var(--s-2);
+  border-bottom: .25mm solid var(--rule-grey);
+}
+.km-2 li:last-child { border-bottom: none; margin-bottom: 0; }
+.km-2 .fig {
+  font-size: var(--t-kpi); font-weight: 700; color: var(--km);
+  line-height: 1; font-variant-numeric: tabular-nums; text-align: right;
+}
+.km-2 .fig small {
+  display: block; font-size: var(--t-micro); font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--km); margin-top: 1.2mm;
+}
+.km-2 .text { font-size: var(--t-body); line-height: 1.4; }
+.km-2 .text b { color: var(--navy); font-weight: 700; }
+
+/* ---- OPTION 3 · EDITORIAL NUMERALS ------------------------------------- */
+/* Quietest. Sector-coloured numerals, no status colour; valence is carried
+   by a small arrow only. Use where the sector opener is already busy. */
+.km-3 li {
+  display: grid; grid-template-columns: 9mm 1fr; column-gap: var(--s-2);
+  align-items: baseline; margin-bottom: var(--s-2);
+}
+.km-3 .n {
+  font-size: var(--t-h3); font-weight: 700; color: var(--sec, var(--rura-blue));
+  font-variant-numeric: tabular-nums;
+}
+.km-3 .text { font-size: var(--t-body); line-height: 1.4; }
+.km-3 .text b { color: var(--navy); font-weight: 700; }
+.km-3 .arrow { color: var(--km); font-weight: 700; }
+
+/* ---- OPTION 4 · PANELS -------------------------------------------------- */
+/* Most prominent. Each message becomes a tinted panel with a status bar.
+   Use only if key messages are meant to compete with the KPI cards. */
+.km-4 { display: flex; gap: var(--s-2); }
+.km-4 li {
+  flex: 1 1 0; background: var(--light-grey);
+  border-top: 1mm solid var(--km); padding: var(--s-2);
+}
+.km-4 .tag {
+  font-size: var(--t-micro); font-weight: 700; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--km); display: block; margin-bottom: 1.4mm;
+}
+.km-4 .text { font-size: var(--t-caption); line-height: 1.4; }
+.km-4 .text b { color: var(--navy); font-weight: 700; }
+
+/* specimen scaffolding only — not part of the system */
+.opt-head {
+  font-size: var(--t-h3); font-weight: 700; color: var(--navy);
+  margin: 0 0 1.5mm; padding-top: var(--s-2);
+  border-top: .35mm solid var(--rule-grey);
+}
+.opt-head span { font-weight: 400; color: var(--slate); font-size: var(--t-caption); }
+.current {
+  font-size: var(--t-body); line-height: 1.4; color: var(--body-ink);
+}
+.current li { margin-bottom: 1.2mm; }
+
+/* specimen scaffolding fixes */
+.current { list-style: none; padding: 0; margin: 0; }
+.km-page .title-block h1 { font-size: var(--t-h2); }
+.km-page .pg-body { padding-top: var(--s-2); }
