@@ -1200,3 +1200,78 @@ Table captions                             : 44, numbered 1-44, sequential
 Figure captions                            : 63, numbered 1-63, sequential
 Drawings / media files                     : 93 / 74   unchanged
 ```
+
+---
+
+## Pass 15 — the real cause of the corruption, and caption harmonisation (17 Oct)
+
+### Word named the part: "Styles 1"
+
+The repair dialog said the fault was in the **styles** part, which rules out the
+paragraph identifiers I fixed in Pass 14. Checking every style reference in all
+three files found it:
+
+| | style references that resolve |
+|---|---|
+| the file you supplied | all resolve |
+| the file you were opening | **`Caption` referenced by 27 paragraphs, never defined** |
+| the file delivered after Pass 14 | all resolve |
+
+When I began adding captions I styled them `Caption` — a style this document
+has never contained. Word treats a reference to a style that does not exist as
+damage to the styles part and repairs it, which is exactly the message you saw.
+
+**That is now fixed**, by the Caption style added in Pass 14. The duplicate
+paragraph identifiers were a genuine defect too, and are also fixed; they were
+simply not what Word was complaining about. Both checks — style resolution and
+identifier uniqueness — are now part of the standard verification.
+
+### Every caption now sits under its exhibit
+
+73 captions were above their table or chart; they are now below it. The document
+had no consistent rule: 44 table captions above, 15 below; 27 figure captions
+above, 34 below. All 107 are now below.
+
+Three needed care:
+
+- The move had to be repeated to a fixed point. Moving one caption past its
+  table changes what the next caption is adjacent to, so the annex licence
+  tables (Tables 29–39, each followed directly by the next) only resolved after
+  eleven rounds.
+- **Figures 36 and 37 sit side by side in a two-cell layout table.** Figure 37's
+  caption was inside its cell, above its chart; Figure 36's was stranded in the
+  body before the table. Each is now at the foot of the cell holding its own
+  chart. No caption was moved across a cell boundary except that one, which was
+  moved deliberately, into the cell its chart lives in.
+- **Figure 37's caption was nearly missed.** The first attempt used a
+  pairwise match on `<w:tc>` tags to decide which cell a paragraph was in, but
+  table cells nest, so the answer was wrong and two captions were skipped. The
+  containment test now walks the tags with a stack.
+
+### Every caption now looks the same
+
+All 107 captions are on the single Caption style, with their direct paragraph
+and run formatting removed, so they inherit it rather than override it:
+
+```
+before : 23 different combinations of style, size and colour
+after  : Caption, no direct formatting            x107
+```
+
+The Caption style is 8.5 pt bold, grey #5B6573, keep-with-next so a caption
+never separates from its exhibit at a page break. Changing all 107 is now a
+single edit to that one style.
+
+### Verification
+
+```
+Structural check                            PASS  (11 checks, listed in Pass 14)
+Style references resolve                    yes   8 paragraph styles, 64 table styles
+w14:paraId unique                           yes   3,310 ids
+Parts differing from the supplied original  word/document.xml, word/styles.xml
+Table captions                              44, numbered 1-44, sequential, all below their table
+Figure captions                             63, numbered 1-63, sequential, 61 below their chart
+                                            (Figures 47 and 49 still have no chart)
+Caption formatting                          one style, 107 of 107
+Drawings / media files                      93 / 74   unchanged
+```
