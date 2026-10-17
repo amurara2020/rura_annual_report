@@ -1118,3 +1118,85 @@ Table captions                             : 44, numbered 1-44, sequential
 Figure captions                            : 63, numbered 1-63, sequential
 Captions repeating a neighbouring line     : 1 (Table 21, by design)
 ```
+
+---
+
+## Pass 14 — the corruption, and Table 44's headers (17 Oct)
+
+### What was wrong, and it was mine
+
+Word's "unreadable content" warning was caused by **four duplicated paragraph
+identifiers**. In OOXML every paragraph carries a `w14:paraId` that must be
+unique in the document. Twice I built a new paragraph by cloning an existing
+one, and the clone carried the original's identifier with it:
+
+| Duplicated id | Where it came from |
+|---|---|
+| `7909B64F`, `616C023E`, `079EFAD7` | the `FRW — Rwandan Franc` row in the acronyms list, cloned from the `FM` row (Tier A/B pass) |
+| `01A0A977` | the Figure 9 split, where one paragraph holding two charts became two paragraphs |
+
+All four now carry fresh values in the valid range. The file passes a full
+structural check:
+
+```
+XML parses                                  ok    (all 26 XML parts)
+w14:paraId values unique                    ok    3,310 ids, 0 duplicates
+Table cells containing a paragraph          ok    1,845 of 1,845
+Rows with a cell / tables with a row         ok    476 / 64
+Adjacent tables Word would merge            ok    none
+Drawing ids unique                           ok    93
+Field characters nest correctly              ok    110 fields
+Relationship references resolve              ok    81 of 81
+Section properties present                   ok
+Zip integrity                                ok    109 parts, none damaged
+```
+
+**The three earlier duplicates have been in the file since the Tier A/B
+delivery.** My verification until now checked that the XML parsed and that tags
+balanced — neither of which catches a repeated identifier. That check is now
+part of the standard verification, so it cannot recur.
+
+I cannot run Word here, so I cannot prove this was the only cause. If the
+warning still appears, say so and I will rebuild the document part by part
+against the original.
+
+### Table 44 column headers
+
+```
+was : License title | FY2022     | FY2023     | FY2024     | FY2025     | FY2026
+now : License title | FY 2021/22 | FY 2022/23 | FY 2023/24 | FY 2024/25 | FY 2025/26
+```
+
+**The assumption, stated plainly:** `FY2022` is read as the year *ending* in
+2022, that is FY 2021/22. Five columns then span FY 2021/22 to FY 2025/26,
+matching Figure 47 (*Valid License, Five-Year Summary, FY 2021/22 to FY
+2025/26*) and ending on the reporting year. The caption was updated to match.
+If the department meant the years starting in those dates, this reverses in a
+minute.
+
+This does **not** resolve the conflict reported in Pass 13: Table 43 still gives
+**81,612** motorcycle licences for FY 2025/26 where Table 44 gives **57,969**.
+Aligning the headers has made the two directly comparable, which makes the
+disagreement easier to see, not smaller.
+
+### One more thing found while checking
+
+The `Caption` style was **referenced by 27 caption paragraphs but never defined**
+in `styles.xml` — the original document had no such style at all. Those captions
+were falling back to body text. The style is now defined (8.5 pt bold, #5B6573,
+keep-with-next) so they render as captions.
+
+That exposes a wider inconsistency, **not changed**: of the 107 captions, 80
+keep the formatting of whatever paragraph they were written into, which runs to
+more than twenty different combinations of size and colour. Saying the word
+would put all 107 on the single Caption style and make them uniform.
+
+### Verification
+
+```
+Parts differing from the supplied original : word/document.xml, word/styles.xml
+Structural check                           : PASS (listed above)
+Table captions                             : 44, numbered 1-44, sequential
+Figure captions                            : 63, numbered 1-63, sequential
+Drawings / media files                     : 93 / 74   unchanged
+```
