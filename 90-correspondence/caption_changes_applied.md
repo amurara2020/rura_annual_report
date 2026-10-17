@@ -1275,3 +1275,105 @@ Figure captions                             63, numbered 1-63, sequential, 61 be
 Caption formatting                          one style, 107 of 107
 Drawings / media files                      93 / 74   unchanged
 ```
+
+---
+
+## Pass 16 — the corruption, found properly this time (17 Oct)
+
+### I was wrong twice. Here is what was actually in the file.
+
+Parsing the document as a tree rather than with regular expressions found it in
+one line:
+
+```
+your original : body children = {p: 938, sdt: 3, tbl: 64, sectPr: 1}
+what I sent   : body children = {p: 940, sdt: 3, tbl: 64, pPr: 4, sectPr: 1}
+                                                           ^^^^^^
+```
+
+**Four `<w:pPr>` elements were sitting loose in the document body, outside any
+paragraph.** A `w:pPr` is paragraph formatting and is only legal inside a
+`w:p`. That is unreadable content, and Word was right to say so.
+
+### The cause was a fault in my own tooling
+
+Every pass in this work has found paragraphs with this pattern:
+
+```
+<w:p(?:\s[^>]*)?(?:/>|>.*?</w:p>)
+```
+
+For an empty self-closing paragraph — `<w:p w14:paraId="…"/>`, and this
+document has 92 of them — `[^>]*` swallows the closing `/`, the `/>` branch
+then cannot match, and the pattern falls through to `>.*?</w:p>`, which runs on
+until the **next** paragraph's closing tag. **One empty paragraph and the
+paragraph after it were being treated as a single block.** Where that following
+paragraph was a caption, my restyling inserted the Caption formatting
+immediately after the empty paragraph's self-closing tag — that is, into the
+body, outside any paragraph. Four captions happened to sit after an empty
+paragraph, which is exactly the four stray elements.
+
+The pattern is corrected to `<w:p(?:\s[^>]*?)?/>|<w:p(?:\s[^>]*?)?>.*?</w:p>`,
+which matches a self-closing paragraph on its own.
+
+### A second fault, caught before it reached you
+
+Rebuilding with the corrected pattern, my first attempt reordered captions by
+rewriting the whole top-level span at once. That silently dropped the **three
+`<w:sdt>` content controls that hold the contents page, the List of Figures and
+the List of Tables.** The tree check caught it. The work is now done as true
+single-paragraph moves — lift one paragraph, insert it after its exhibit —
+touching nothing else. Verified: `sdt: 3`, and all three TOC field instructions
+intact.
+
+### Why the earlier diagnoses were wrong
+
+- **Pass 14 (duplicate paragraph ids)** — real, fixed, but not what Word was
+  reporting.
+- **Pass 15 (undefined Caption style)** — also real and also fixed. The repair
+  dialog said "Styles 1" and that is consistent, so it may well have been the
+  fault you saw at that point. But the file I sent after it carried the four
+  stray elements, so the warning survived.
+
+All three defects are now gone. The checks I was running — XML parses, tags
+balance — could not catch any of them, because the file was well-formed XML
+throughout. It was invalid WordprocessingML, which is a different question. The
+verification now parses the document as a tree and checks element placement.
+
+### The harmonisation, redone on the corrected base
+
+```
+73 captions moved to sit under their exhibit
+107 captions on one Caption style, no direct formatting
+
+Figure captions  61 below their chart, 2 with no chart (Figures 47 and 49)
+Table captions   44 below their table
+Still above      none
+Formatting       Caption, no overrides            x107
+```
+
+Figures 36 and 37 sit side by side in a two-cell layout table; each caption is
+now under its own chart inside its own cell. That needed a separate pass over
+the paragraphs within each cell, since a table is a single block at the top
+level and its contents are invisible there.
+
+### Verification — now including the checks that would have caught this
+
+```
+Document parses as a tree                   PASS
+w:pPr first child of every paragraph        PASS   2,956 paragraphs
+w:rPr first child of every run              PASS   4,272 runs
+w:tcPr first in every cell                  PASS
+Every cell ends in a paragraph              PASS   1,845 cells
+Every table starts tblPr, tblGrid           PASS   64 tables
+Body children                               p, sdt x3, tbl, sectPr - matches the original
+w:tr children all legal                     PASS
+Style references resolve                    PASS
+w14:paraId unique                           PASS
+Bookmarks balanced, ids and names unique    PASS
+Fields nest correctly                       PASS   110 fields
+Relationship references resolve             PASS   81 of 81
+Zip integrity                               PASS   109 parts
+Parts differing from your original          word/document.xml, word/styles.xml
+Tables 1-44, Figures 1-63                   sequential
+```
