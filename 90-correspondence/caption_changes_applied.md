@@ -1377,3 +1377,141 @@ Zip integrity                               PASS   109 parts
 Parts differing from your original          word/document.xml, word/styles.xml
 Tables 1-44, Figures 1-63                   sequential
 ```
+
+---
+
+## Pass 17 — the management-agreed version, formatted (22 October)
+
+Worked on `RURA_Annual_Report_FY2025-26_UPDATED`, downloaded from Google Docs.
+Returned as `RURA_Annual_Report_FY2025-26_FORMATTED.docx`.
+
+### Margins — the headline fix
+
+The document is in two sections. The second one — **1,119 of the body's
+paragraphs, from *FY 2025/26 in Numbers* to the end** — carried a right margin of
+**0.47 cm** against 2.54 cm on the other three sides, so nearly the whole report
+ran to within 5 mm of the right page edge.
+
+```
+was : top 2.54  bottom 2.54  left 2.54  right 0.47 cm
+now : top 2.54  bottom 2.54  left 2.54  right 2.54 cm
+```
+
+Both sections now match. A4, 21.0 × 29.7 cm throughout.
+
+### Numbering is automatic again
+
+The round trip through Google Docs turned every caption into plain typed text,
+which is why the numbers drifted. They are **sequence fields** again, so Word
+renumbers them itself whenever anything is inserted.
+
+| | Was | Now |
+|---|---|---|
+| Figures | 66 captions numbered 1–63 with 22, 44, 45, 46 and 48 used twice and 41 and 54 never used | **1–66, sequential** |
+| Tables | 42 captions, two more listed with no caption in the body | **1–43, sequential** |
+
+### The two lists were pointing at the wrong thing
+
+All three front-matter fields were heading-based tables of contents. The List of
+Figures and List of Tables would have been **replaced by a second copy of the
+contents page** the first time anyone pressed F9.
+
+```
+List of Figures : TOC \h \u \z \t "Heading 1,1,…"  ->  TOC \h \z \c "Figure"
+List of Tables  : TOC \h \u \z \t "Heading 1,1,…"  ->  TOC \h \z \c "Table"
+Table of Contents                                      unchanged, levels 1–3
+```
+
+### The missing table caption
+
+`Table 43: Transport licenses by category` and `Table 44: Transport Licenses by
+Category, Five-Year Series` were both in the List of Tables with no caption in
+the body. The table itself is there, in the Transport chapter — it had been
+labelled **`Figure : Trend in Vehicles with valid licenses`**, with no number and
+as a figure rather than a table. It is now **Table 43**, keeping its own wording.
+
+**One entry fewer than the list promised.** Either a second transport table was
+deleted, or the two list entries always described the same table. Worth
+confirming with Transport.
+
+### Titles
+
+Five captions read *"Electric Trend of Authorized Electric …"*:
+
+| Was | Now |
+|---|---|
+| Electric Trend of Authorized Electric Taxi Cabs | Trend of Authorized Electric Taxi Cabs |
+| Electric Trend of Authorized Electric Rentals | Trend of Authorized Electric Rentals |
+| Electric Trend of Authorized Electric Motorcycles | Trend of Authorized Electric Motorcycles |
+| Electric Trend of Authorized Electric buses | Trend of Authorized Electric **B**uses |
+| Electric Trend of Authorized Electric transport of Goods | Trend of Authorized Electric **T**ransport of Goods |
+
+A stray `Figure : Trends of Valid Licenses and Authorizations Issued`, which
+repeated the caption directly beneath it, was removed.
+
+### Placeholders printed inside two charts
+
+`Figure ……. : Trends of valid licenses in energy` and `Figure …….. : Storage
+Capacity for liquid petroleum fuels against the National targets` were inside the
+image itself, so each title printed twice. The text is gone; both images are
+untouched.
+
+### Headings
+
+- A whole paragraph styled Heading 4 — *"As of June 2026, IHS Rwanda and TRES
+  Infrastructure Ltd had constructed 13 towers…"* — returned to body text. It was
+  appearing in the contents page as a section.
+- **Five empty headings** returned to body text. Each produced a blank line in
+  the contents page.
+
+### Captions
+
+All **108 captions** are on one Caption style, 8.5 pt grey, keep-with-next.
+**104 sit directly under their table or chart**; two captions that shared a
+paragraph with their image were split so the caption follows it.
+
+### Consistency
+
+| | Was | Now |
+|---|---|---|
+| Fiscal-year formats | 15 | **1** — `FY 2025/26` |
+| Currency | FRW and RWF | **FRW** |
+
+### Verification
+
+```
+Document parses as a tree                   PASS
+w:pPr first in every paragraph              PASS   3,487 paragraphs
+w:rPr first in every run                    PASS
+Every cell ends in a paragraph              PASS   2,015 cells
+Every table starts tblPr, tblGrid           PASS   73 tables
+Body children                               p, sdt x3, tbl, sectPr — matches the upload
+Style references resolve                    PASS
+w14:paraId unique                           PASS
+Bookmarks                                   325 / 325 balanced; broken anchors 18, as uploaded
+Field characters                            112 / 112
+Relationship references resolve             PASS   87 of 87
+Parts differing from the upload             word/document.xml, word/styles.xml
+Drawings / media                            101 / 80  unchanged — no image touched
+Table captions                              1–43 sequential, all below their table
+Figure captions                             1–66 sequential
+```
+
+### Still open — content, not formatting
+
+1. **Three captions have no exhibit**: Figure 29 (*Trends of Valid Water and
+   Sanitation Licenses*, sitting between two source lines), Figure 53 (*Field
+   Verification of Industrial Radiography and Nuclear-Gauge Licensees*) and
+   Table 24 (*Bilateral and Multilateral Agreements Advanced*).
+2. **Two unfilled cross-references** remain in the prose: `Table ………presents the
+   trends…` and `Table ………….. shows the trends…`. These need the sentence
+   finishing, which is an editorial call.
+3. **Energy still has no 2.2.5 Compliance Monitoring and Enforcement.**
+4. **The open comment** on the RURA title line — *"Proposed to be deleted because
+   we have the logo on the cover page"* — is unresolved.
+
+### Before printing
+
+Open in Word, **Ctrl+A then F9**. That rebuilds the contents page, the List of
+Figures and the List of Tables from the captions, and sets the page numbers. The
+front lists still show their old cached content until that is done.
