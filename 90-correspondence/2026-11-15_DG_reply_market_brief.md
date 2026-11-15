@@ -22,7 +22,7 @@ Authority. If RURA is recorded as having reviewed and accepted the brief, we ado
 data.
 
 **On network coverage, the brief has its two figures the wrong way round.** It reports 3G population coverage at
-about 99% and 4G at about 96%. The operator returns for June 2026 give **3G at 96.53% and 4G at 98.69%**. Each of
+about 99% and 4G at about 96%. The ICT department's June 2026 position is **3G at 96.53% and 4G at 98.69%**. Each of
 the brief's numbers is within about two and a half points of the *other* technology's true value, which is the
 signature of a transposition rather than of independent error. The consequence is not cosmetic: as written, the
 brief tells the reader that 3G reaches more of the population than 4G, when the reverse is true — and 4G migration

@@ -6,7 +6,7 @@
 **Subject:** Accuracy of data used in the market brief submitted for review
 
 **Sources used for this review:** RURA Annual Report FY 2025/26; RURA ICT Sector Statistics Reports, Q1–Q4 2025;
-RURA operator returns as at June 2026; Rwanda Energy Group (REG).
+coverage figures provided by the ICT department as at June 2026; Rwanda Energy Group (REG).
 
 ---
 
@@ -37,7 +37,7 @@ source holders.
 | 3G population coverage | approximately 99% | **96.53%** |
 | 4G population coverage | approximately 96% | **98.69%** |
 
-*Source: RURA operator returns, June 2026 (MTN, Airtel, KTRN).*
+*Source: ICT department, position as at June 2026, averaged across the reporting operators (MTN, Airtel, KTRN).*
 
 Each figure in the brief is within approximately 2.5 percentage points of the **other** technology's true value,
 indicating the two have been swapped rather than independently misstated.
@@ -47,10 +47,19 @@ population than 4G. The reverse is the case, and 4G expansion is the principal I
 year: the 4G share of mobile internet subscriptions rose from 50.9% to 56.8%, on 6.31 million 4G subscriptions, an
 increase of 22.8% *(Source: Annual Report FY 2025/26)*.
 
-**Note before these figures are quoted publicly.** The coverage figures above are an average across reporting
-operators. National coverage — the share of population reached by at least one operator — is a different and higher
-measure. The Authority should settle which measure it publishes before a single national coverage figure enters
-circulation.
+**Two points before these figures are quoted publicly.**
+
+*First, the collection source should be stated.* Coverage is not reported in any RURA publication — the quarterly
+statistics series carried a coverage table until 2017 and no longer does, and the Annual Report has never contained
+one. The figures above are therefore drawn from internal records. The Authority's standing operator return does
+require geographic and population coverage for 2G, 3G, 4G and 5G each quarter, but whether these particular figures
+come from those returns, from quality-of-service monitoring or from another exercise should be confirmed and stated
+before they are cited externally.
+
+*Second, an average across operators is not national coverage.* National coverage — the share of population reached
+by at least one operator — is the union of the operators' footprints and is a different and higher measure. One of
+the three operators is also a 4G wholesaler, which affects what the 3G row represents. The Authority should settle
+which measure it publishes before a single national coverage figure enters circulation.
 
 ### 1.2 Household electricity access — overstated and misdated
 
@@ -100,26 +109,66 @@ internet share 65.0% *(Annual Report)*.
 
 ---
 
-## 3. Misleading as written — mobile internet adoption
+## 3. Mobile internet adoption — the brief's central claim is not a RURA measure, and does not reconcile with RURA data
 
 The brief states, citing GSMA, that unique mobile internet users represented approximately 21% of the population in
-2025, and builds its central argument on that figure.
+2025, and builds its central argument on that figure — that "digital adoption remains below infrastructure
+readiness levels".
 
-| Measure | Figure | Source |
-|---|---|---|
-| Mobile internet subscriptions | 11,193,584 at June 2026, or 77.6 per 100 inhabitants | RURA records, June 2026 |
-| Internet subscriptions per 100 inhabitants | 74.35 at December 2025 | ICT Sector Statistics Report Q4 2025 |
-| Unique mobile internet users | approximately 21% of population, 2025 | GSMA (the brief's source) |
+### 3.1 RURA does not measure internet users, and has deliberately not done so
 
-Both measures are valid. They measure different things: RURA reports active subscriptions, GSMA estimates unique
-individuals. The brief does not state this, with the result that two figures roughly three and a half times apart
-appear in the same document without explanation. Readers will conclude that one is incorrect, and the figure
-attributed to RURA is the one that will be questioned.
+RURA counts **connection points**, not people. The published figures are active subscriptions: one individual
+holding a phone SIM, a router SIM and a tablet SIM is counted three times. There is no de-duplication, by design.
 
-**Correction required:** the GSMA figure should state that it counts unique individuals, name its edition and year,
-and appear alongside RURA's figure with the unit stated — for example: *"RURA reports 11,193,584 mobile internet
-subscriptions at June 2026, or 77.6 per 100 inhabitants. GSMA estimates unique mobile internet users at
-approximately 21% of the population in 2025. The two measures are not comparable."*
+This is not an oversight. The Authority's own indicator framework lists *"Unique internet users (estimated)"* with
+the note *"after de-duplication or modelling"* and **assigns it no collection source**. The two inputs that
+de-duplication would require — *"Multi-SIM users"* and the *"dual-SIM vs single-SIM ratio, for SIM de-duplication
+modelling"* — likewise carry no collection source, while every metric RURA does collect is mapped to a returns
+sheet.
+
+**The Authority therefore cannot produce, confirm or refute any unique-user figure, including 21%.** It is outside
+what RURA measures.
+
+### 3.2 The 21% figure does not reconcile with RURA's published data
+
+The figure can nonetheless be tested against RURA's own numbers, and it does not hold:
+
+| | |
+|---|---|
+| 21% of the population (≈14.42 million) | ≈ **3.03 million** unique users |
+| Mobile internet subscriptions, June 2026 | **11,193,584** |
+| **Implied subscriptions per user** | **3.70** |
+| 4G subscriptions alone, June 2026 | 6,310,000 → **2.08 per implied user** |
+
+*Source: Annual Report FY 2025/26.*
+
+For 21% to be correct, every mobile internet user in Rwanda would hold **3.7 active mobile internet subscriptions on
+average**, and more than two 4G subscriptions each. Multi-SIM use is common, but not at that level: at a plausible
+1.5 subscriptions per user, a 21% penetration rate would imply roughly 4.5 million subscriptions, where RURA records
+11.2 million — a difference of 6.7 million.
+
+The gap cannot be explained by multi-SIM holding alone. It would require some combination of machine-to-machine SIMs
+sitting inside RURA's subscription count, a materially narrower GSMA definition than the brief conveys, a different
+reference year, or a misreading of the GSMA source. **The brief gives no GSMA edition, report title or publication
+year, so none of these can be checked.**
+
+### 3.3 What this means for the brief
+
+The fault is more serious than a missing label. The brief **substitutes an unverifiable third-party model estimate
+for a measured regulatory statistic**, and then rests its central conclusion on the estimate. That conclusion may
+well be right — RURA's own reporting notes that fixed broadband is marginal and declining — but it is not evidenced
+by anything the Authority holds, and RURA cannot endorse it.
+
+**Required of the author:**
+
+1. Cite the GSMA source in full — report title, edition and year — so the figure and its definition can be checked.
+2. State plainly that it is a modelled estimate of unique individuals, not a measured count.
+3. Do not present it as the adoption position alongside RURA figures as though the two were comparable. RURA
+   measures subscriptions per 100 inhabitants; GSMA models individuals. They are different quantities and neither
+   converts into the other.
+4. Where the brief states RURA's position, use RURA's measure and unit: **11,193,584 mobile internet subscriptions
+   at June 2026, equivalent to 77.6 per 100 inhabitants** — not "77.6% of the population", which the figure does
+   not mean.
 
 ---
 
@@ -187,8 +236,10 @@ No discrepancy was found between the two publications.
    endorsement would adopt figures from GSMA, REG, NISR and unattributed sources as regulatory data.
 2. **Issue the three corrections** in §1: the transposed coverage figures, household electricity access at 84.6% as
    at July 2025, and the direction of fixed broadband.
-3. **Require the adoption figure to be labelled** so that subscriptions and unique users are not presented as the
-   same measure (§3).
+3. **Require the adoption claim to be sourced and re-stated** (§3). The GSMA figure must carry its report title,
+   edition and year; it must be described as a modelled estimate of individuals; and it must not be presented as
+   comparable with RURA's subscription figures. RURA does not measure internet users and cannot endorse a
+   unique-user figure — and 21% does not reconcile with RURA's own data in any case.
 4. **Offer the author RURA's published indicator set**, with prior-year comparators and stated reference dates, so
    that a revised version rests on RURA figures rather than unattributed ones.
 5. **Require the regulatory section to be rewritten** to reflect Mobile Number Portability and the two regulations
@@ -219,21 +270,21 @@ quarter, so the cost is editorial rather than analytical.
 ## Annex — Claim-by-claim comparison
 
 **Sources:** **AR** = RURA Annual Report FY 2025/26 · **Q4** = RURA ICT Sector Statistics Report, Q4 2025 ·
-**OR** = RURA operator returns, June 2026 · **REG** = Rwanda Energy Group · **GSMA** = the brief's own cited source
+**ICT** = ICT department records, position as at June 2026 · **REG** = Rwanda Energy Group · **GSMA** = the brief's own cited source
 
 ### A. Wrong — correction required (3)
 
 | # | The brief states | What the sources show | Source | Verdict |
 |---|---|---|---|---|
-| 1 | 3G population coverage ≈ **99%** | **96.53%** | OR | **Wrong** — transposed with 4G |
-| 2 | 4G population coverage ≈ **96%** | **98.69%** | OR | **Wrong** — transposed with 3G |
+| 1 | 3G population coverage ≈ **99%** | **96.53%** | ICT | **Wrong** — transposed with 4G |
+| 2 | 4G population coverage ≈ **96%** | **98.69%** | ICT | **Wrong** — transposed with 3G |
 | 3 | Household electricity access ≈ **85–88%**, "as of 2026" | **84.6%** as at **July 2025** | REG | **Wrong** — above the sourced figure, and misdated |
 
 ### B. Misleading or out of date (4)
 
 | # | The brief states | What the sources show | Source | Verdict |
 |---|---|---|---|---|
-| 4 | Unique mobile internet users ≈ **21%** of population (2025), presented as the adoption position | 11,193,584 subscriptions = **77.6 per 100 inhabitants** (Jun 2026); **74.35 per 100 inhabitants** (Dec 2025). Both measures valid; they count different things | AR · Q4 · GSMA | **Misleading as written** — metric not stated |
+| 4 | Unique mobile internet users ≈ **21%** of population (2025), presented as the adoption position | RURA counts **connection points, not people**, and its indicator framework assigns **no collection source** to unique users or to the de-duplication inputs. 21% also implies **3.70 mobile internet subscriptions per user** (and 2.08 4G subs per user), which RURA data does not support. No GSMA edition cited | AR · Q4 · GSMA | **Not a RURA measure, and does not reconcile** — see §3 |
 | 5 | "Continued broadband expansion" | Fixed broadband **fell**: 0.611 → 0.584 per 100 inhabitants; 84,152 subscriptions | Q4 · AR | **Wrong in direction** for fixed broadband |
 | 6 | Regulatory section names no instrument; no mention of Mobile Number Portability | Two regulations made in-year: **No. 20/R/ICT/RURA/2026** (infrastructure sharing), **No. 21/R/ICT/RURA/2026** (quality of service). **MNP** inspected and ready at 6 service centres, awareness campaign delivered, implementation FY 2026/27 | AR | **Out of date** — omits the year's actual developments |
 | 7 | "Increasing investment in digital infrastructure" | Valid licences/authorizations **fell 11%** (1,684 → 1,499); tower authorizations **fell 169 → 13**; 13 towers built, total 1,779. Shift from build-out to optimisation | AR | **Requires qualification** |

@@ -66,9 +66,11 @@ strength of the 2017 report. The word "coverage" does not appear in any of the f
 neither does 5G.)
 
 The Authority does collect it. The standing operator return requires every MNO to report geographic and population
-coverage for 2G, 3G, 4G and 5G each quarter. The SDS in charge of ICT has now supplied the June 2026 position.
+coverage for 2G, 3G, 4G and 5G each quarter. The ICT department has now supplied the June 2026 position. Note that its collection source is not stated: it
+may be the quarterly operator returns, quality-of-service monitoring or another exercise. This must be confirmed
+before the figures are cited externally.
 
-**Average population coverage across the reported operators (MTN, Airtel and KTRN), June 2026:**
+**Average population coverage across the reporting operators (MTN, Airtel and KTRN), June 2026:**
 
 | Technology | Population coverage | Brief's claim | Verdict |
 |---|---|---|---|
