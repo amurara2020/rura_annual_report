@@ -21,7 +21,7 @@ The brief is broadly sound in direction but contains **three factual errors** an
 RURA does not produce.
 
 Of 22 checkable claims: **6 are confirmed** by RURA publications, **3 are wrong and should be corrected**,
-**4 are out of date or misleading as written**, and **9 are not RURA indicators** and cannot be validated by the
+**8 are out of date or misleading as written**, and **5 are not RURA indicators** and cannot be validated by the
 Authority.
 
 The most significant error is in the brief's own headline coverage table, where the 3G and 4G figures have been
@@ -187,16 +187,11 @@ source holders or removed.
 | Population approximately 14 million; 445 persons per km² | NISR *(note: the Annual Report's implied denominator is approximately 14.42 million)* |
 | Economic growth of 9.4% in 2025 and 9.7% in H1 2026 | NISR / MINECOFIN |
 | More than one million additional mobile internet users by 2031 | GSMA projection |
-| Grid connections approximately 60% of households | REG |
-| Off-grid access approximately 25% of households | REG |
-| A third mobile network operator licence under consideration | Unattributed in the brief; no RURA source |
-| Commercial 5G available in parts of Kigali via MTN Rwanda | No RURA source — see below |
+| No official spectrum package announced for a third licence | No spectrum award reported; consistent as far as RURA records go |
 
-**On 5G.** The Annual Report records only that "5G services commenced". No RURA publication reports 5G by operator,
-by location, or by subscription. The brief's attribution to MTN and to Kigali may be accurate but cannot be
-supported by any RURA source.
-
-**On a third licence.** No RURA source supports this. It is also the brief's most consequential omission — see §5.
+Three further claims that RURA does not publish directly — the grid and off-grid split, 5G availability, and the
+third-licence report — are nonetheless ones on which the Authority holds relevant evidence. They are dealt with in
+§5 rather than here.
 
 ---
 
@@ -208,6 +203,9 @@ supported by any RURA source.
 | **The regulatory section names no instrument** | Two regulations were made during the year: No. 20/R/ICT/RURA/2026 on telecommunication infrastructure sharing, and No. 21/R/ICT/RURA/2026 on mobile and fixed network quality of service. | Annual Report §2.1.2 |
 | **"Increasing investment in digital infrastructure" requires qualification** | Valid licences and authorizations fell 11%, from 1,684 to 1,499; tower authorizations fell from 169 to 13; 13 towers were constructed, bringing the total to 1,779. The sector has moved from build-out to optimisation of an established base. | Annual Report §2.1.3, §2.1.4.7 |
 | **Financial inclusion asserted without evidence** | Mobile money penetration reached 61.8 SIM cards per 100 inhabitants, up from 55.0; 8,135,275 linked SIM cards and 193,810 active agent SIMs at December 2025. | Annual Report; Q4 2025 report |
+| **Grid and off-grid household split is unsourced** | RURA reports **connections**, not access rates: 2,008,342 grid connections at June 2026, up 13.5%. At the brief's 60% these imply ≈3.35 million households, or ≈4.3 persons per household, so the figure is broadly consistent with our data. The split itself is unsourced, and 60% + 25% = 85%, leaving the brief's own 88% upper bound unsupported by its own arithmetic. | Annual Report; REG |
+| **5G attribution is unsupported** | The Annual Report records only that "5G services commenced". No RURA source reports 5G by operator, location or subscription, and the mobile internet technology series covers 4G, 3G and EDGE only, so 5G has no measured uptake in RURA reporting. The attribution to MTN and to Kigali may be accurate but cannot be sourced to the Authority. | Annual Report |
+| **Third-licence report displaces the actual development** | No RURA source supports a third licence under consideration, and no spectrum award is reported. The market-structure development under way is Mobile Number Portability (above). The brief presents the third licence as "the first material change to market structure in several years", which is out of date. | Annual Report |
 
 The brief also omits the two headline ICT results of the year: **mobile penetration crossed 100 subscriptions per
 100 inhabitants**, rising from 95.1 to 100.6, and **4G became the majority mobile internet technology** at 56.8%

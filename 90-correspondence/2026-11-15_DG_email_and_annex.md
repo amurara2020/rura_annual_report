@@ -9,7 +9,7 @@ Dear Director General,
 We have reviewed the market brief against the Annual Report FY 2025/26 and the ICT Sector Statistics Report for Q4
 2025. The claim-by-claim comparison is annexed.
 
-Of 22 checkable claims, **6 are confirmed, 3 are wrong, 4 are misleading or out of date, and 9 are not RURA
+Of 22 checkable claims, **6 are confirmed, 3 are wrong, 8 are misleading or out of date, and 5 are not RURA
 indicators** and cannot be validated by the Authority.
 
 **Two findings matter most.**
@@ -68,40 +68,39 @@ brief's own cited source
 | 5 | "Continued broadband expansion" | Fixed broadband **declined**: 0.611 → 0.584 per 100 inhabitants; 84,152 subscriptions | Q4 · AR | Wrong in direction for fixed broadband |
 | 6 | No regulatory instrument named; **no mention of Mobile Number Portability** | Two regulations made in-year (infrastructure sharing; quality of service). MNP ready at six service centres, awareness campaign delivered, implementation FY 2026/27 | AR | Omits the year's actual developments |
 | 7 | "Increasing investment in digital infrastructure" | Valid licences **fell 11%** (1,684 → 1,499); tower authorizations **fell 169 → 13**; 13 towers built, total 1,779 | AR | Requires qualification |
+| 8 | Grid connections ≈ **60%** of households; off-grid ≈ **25%** | We report **connections, not access rates**: **2,008,342** grid connections at June 2026, ▲13.5% from 1,768,830. At 60% these imply ≈3.35 million households, or ≈4.3 persons per household — so the 60% is broadly consistent with our data. But the split is unsourced, and 60% + 25% = 85%, which leaves the brief's own 88% upper bound unsupported | AR · REG | Broadly consistent, but unsourced and internally inconsistent |
+| 9 | Commercial **5G** in parts of Kigali via **MTN Rwanda** | We confirm only that **"5G services commenced"**. No RURA source reports 5G by operator, location or subscription, and our mobile internet technology series covers 4G, 3G and EDGE only — 5G has no measured uptake in our reporting | AR | Existence confirmed; attribution and location unsupported |
+| 10 | A **third MNO licence** is under consideration, "the first material change to market structure in several years" | No RURA source. The market-structure development actually under way is **Mobile Number Portability** — service centres inspected and ready at six locations, awareness campaign delivered, implementation FY 2026/27. No spectrum award is reported | AR | Out of date — displaced by MNP |
 
 ## Confirmed
 
 | # | The brief claims | What we found | Source | Verdict |
 |---|---|---|---|---|
-| 8 | Two licensed mobile network operators | MTN Rwandacell Plc, Airtel Rwanda Ltd | AR | Correct |
-| 9 | MTN market leader ≈ **66%** | **66.3%** (Dec 2025); **65.8%** (Jun 2026) | Q4 · AR | Correct — confirmed twice |
-| 10 | Airtel the second operator | **33.7%** (Dec 2025); **34.2%** (Jun 2026) | Q4 · AR | Correct |
-| 11 | RURA responsible for licensing and spectrum | Confirmed | AR | Correct |
-| 12 | Growing international bandwidth | Equipped **▲58.7%** to 1,197,355 Mbps; used **▲22.0%** to 345,864 Mbps | AR | Correct — and understated |
-| 13 | Multiple regional fibre routes | Fibre backbone, metro and access reported by operator | AR | Consistent |
+| 11 | Two licensed mobile network operators | MTN Rwandacell Plc, Airtel Rwanda Ltd | AR | Correct |
+| 12 | MTN market leader ≈ **66%** | **66.3%** (Dec 2025); **65.8%** (Jun 2026) | Q4 · AR | Correct — confirmed twice |
+| 13 | Airtel the second operator | **33.7%** (Dec 2025); **34.2%** (Jun 2026) | Q4 · AR | Correct |
+| 14 | RURA responsible for licensing and spectrum | Confirmed | AR | Correct |
+| 15 | Growing international bandwidth | Equipped **▲58.7%** to 1,197,355 Mbps; used **▲22.0%** to 345,864 Mbps | AR | Correct — and understated |
+| 16 | Multiple regional fibre routes | Fibre backbone, metro and access reported by operator | AR | Consistent |
 
 ## Not RURA indicators — the Authority cannot validate
 
 | # | The brief claims | What we found | Source | Verdict |
 |---|---|---|---|---|
-| 14 | Population ≈ **14 million** | No RURA figure. AR's implied denominator is **≈14.42 million** | NISR | Cannot validate — ≈0.4m low |
-| 15 | ≈ **445** people per km² | No RURA figure | NISR | Cannot validate |
-| 16 | Economy grew **9.4%** (2025), **9.7%** (H1 2026) | No RURA figure | NISR / MINECOFIN | Cannot validate |
-| 17 | **>1 million** additional adopters by 2031 | GSMA projection; no RURA equivalent | GSMA | Cannot validate |
-| 18 | Grid connections ≈ **60%** of households | Not supplied. AR reports **connections** (2,008,342, ▲13.5%), not access. With row 19 sums to 85%, leaving the brief's own 88% unsupported | REG | Cannot validate |
-| 19 | Off-grid access ≈ **25%** of households | Not supplied | REG | Cannot validate |
-| 20 | **Third MNO licence** under consideration | No RURA source. The actual development is MNP (row 6) | — | Cannot validate — unattributed |
-| 21 | **5G** in parts of Kigali via **MTN** | AR records only that "5G services commenced". No RURA source reports 5G by operator, location or subscription | AR | Cannot validate |
-| 22 | No **spectrum package** announced for a third licence | No spectrum award reported | AR | Cannot confirm or deny |
+| 17 | Population ≈ **14 million** | No RURA figure. AR's implied denominator is **≈14.42 million** | NISR | Cannot validate — ≈0.4m low |
+| 18 | ≈ **445** people per km² | No RURA figure | NISR | Cannot validate |
+| 19 | Economy grew **9.4%** (2025), **9.7%** (H1 2026) | No RURA figure | NISR / MINECOFIN | Cannot validate |
+| 20 | **>1 million** additional adopters by 2031 | GSMA projection; no RURA equivalent | GSMA | Cannot validate |
+| 21 | No **spectrum package** announced for a third licence | No spectrum award reported | AR | Cannot confirm or deny |
 
 ## Totals
 
 | Verdict | Claims |
 |---|---|
 | Wrong — correction required | **3** |
-| Misleading or out of date | **4** |
+| Misleading or out of date | **8** *(rows 4–10; row 8 covers two claims)* |
 | Confirmed | **6** |
-| Not RURA indicators | **9** |
+| Not RURA indicators | **5** |
 | **Total** | **22** |
 
 ## Assurance on our own figures
