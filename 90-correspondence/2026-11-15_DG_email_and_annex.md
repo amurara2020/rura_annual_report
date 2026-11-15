@@ -1,6 +1,10 @@
 # Email to the Director General — with annex
 
-**Subject:** Review of the Rwanda Telecommunications Market Brief
+**Subject:** Review of the Rwanda Telecommunications Market Brief — not recommended for endorsement
+
+*Alternative subjects, depending on who may see it onward:*
+- *Neutral, safe to forward to the author:* Review of the Rwanda Telecommunications Market Brief — findings and corrections
+- *If the DG wants the scale up front:* Market brief review — 6 of 22 claims confirmed; two figures to correct
 
 ---
 
