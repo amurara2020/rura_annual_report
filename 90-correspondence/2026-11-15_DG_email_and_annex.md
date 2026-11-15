@@ -9,8 +9,8 @@ Dear Director General,
 We have reviewed the market brief against the Annual Report FY 2025/26 and the six published ICT Sector Statistics
 Reports from Q1 2025 to Q2 2026. The claim-by-claim comparison is annexed.
 
-Of 22 checkable claims, **6 are confirmed, 3 are wrong, 8 are misleading or out of date, and 5 are not RURA
-indicators** and cannot be validated by the Authority.
+Of 22 checkable claims, **6 are confirmed, 2 are wrong, 9 are misleading, unsourced or out of date, and 5 are not
+RURA indicators** and cannot be validated by the Authority.
 
 **Two findings matter most.**
 
@@ -26,8 +26,11 @@ inhabitants at June 2026. The estimate also does not reconcile with our data: 21
 internet user to hold **3.7 active subscriptions**. The brief cites no GSMA edition, so its definition cannot be
 checked.
 
-Household electricity access is also overstated at 85–88% against **84.6% (REG, July 2025)**, and presented as the
-2026 position.
+On household electricity access, the brief's range of 85–88% may well be correct. The most recent figure we hold is
+**84.6% (REG, July 2025)**, and our own grid connections rose **13.5%** over FY 2025/26, from 1,768,830 to
+2,008,342, so access has very likely risen since. The fault is that the brief gives no source and no date for a
+figure it presents as the 2026 position. **We will confirm the current figure with REG** rather than treat the range
+as an error.
 
 **One caution on the coverage figures.** They are not published anywhere. Coverage is absent from all six quarterly
 reports and from the Annual Report, and the figures we hold are understood to come from the Q3 2026 report still in
@@ -47,8 +50,9 @@ Every other indicator we checked — subscriptions, penetration, market share, f
 bandwidth — matches the published quarterly figures exactly.
 
 **We recommend** that the Authority does not endorse the brief in its present form; that the author is given the
-three corrections above; that the GSMA figure is properly sourced and not presented as comparable with ours; and
-that population, economic growth and the grid split are referred to NISR, MINECOFIN and REG.
+coverage correction above; that the GSMA figure is properly sourced and not presented as comparable with ours; and
+that the electricity, population and economic growth figures are sourced and dated, with the current access figure
+confirmed by REG.
 
 **One standing matter.** We collect network coverage from every operator each quarter, for 2G through 5G, and have
 published none of it in six consecutive quarters. That is why an outside author used third-party estimates rather
@@ -84,17 +88,17 @@ Q3 2026 report is published, and their reference date should be confirmed.
 |---|---|---|---|---|
 | 1 | 3G population coverage ≈ **99%** | **96.53%** | OR | Transposed with 4G |
 | 2 | 4G population coverage ≈ **96%** | **98.69%** | OR | Transposed with 3G |
-| 3 | Household electricity access **85–88%**, "as of 2026" | **84.6%**, July 2025 | REG | Overstated and misdated |
 
-## Misleading or out of date
+## Misleading, unsourced or out of date
 
 | # | The brief claims | What we found | Source | Verdict |
 |---|---|---|---|---|
-| 4 | Unique mobile internet users ≈ **21%** of population | RURA counts connection points, not people, and does not produce a unique-user figure. Our published position is **77.6 internet subscriptions per 100 inhabitants** at June 2026. 21% would imply **3.70 subscriptions per user**. No GSMA edition cited | Q2-26 · AR · GSMA | Not a RURA measure; does not reconcile |
-| 5 | "Continued broadband expansion" | Fixed broadband **declined**: 0.611 → 0.584 per 100 inhabitants; 84,152 subscriptions | Q4-25 · AR | Wrong in direction for fixed broadband |
-| 6 | No regulatory instrument named; **no mention of Mobile Number Portability** | Two regulations made in-year (infrastructure sharing; quality of service). MNP ready at six service centres, awareness campaign delivered, implementation FY 2026/27 | AR | Omits the year's actual developments |
-| 7 | "Increasing investment in digital infrastructure" | Valid licences **fell 11%** (1,684 → 1,499); tower authorizations **fell 169 → 13**; 13 towers built, total 1,779 | AR | Requires qualification |
-| 8 | Grid connections ≈ **60%** of households; off-grid ≈ **25%** | We report **connections, not access rates**: **2,008,342** grid connections at June 2026, ▲13.5% from 1,768,830. At 60% these imply ≈3.35 million households, or ≈4.3 persons per household — so the 60% is broadly consistent with our data. But the split is unsourced, and 60% + 25% = 85%, which leaves the brief's own 88% upper bound unsupported | AR · REG | Broadly consistent, but unsourced and internally inconsistent |
+| 3 | Unique mobile internet users ≈ **21%** of population | RURA counts connection points, not people, and does not produce a unique-user figure. Our published position is **77.6 internet subscriptions per 100 inhabitants** at June 2026. 21% would imply **3.70 subscriptions per user**. No GSMA edition cited | Q2-26 · AR · GSMA | Not a RURA measure; does not reconcile |
+| 4 | "Continued broadband expansion" | Fixed broadband **declined**: 0.611 → 0.584 per 100 inhabitants; 84,152 subscriptions | Q4-25 · AR | Wrong in direction for fixed broadband |
+| 5 | No regulatory instrument named; **no mention of Mobile Number Portability** | Two regulations made in-year (infrastructure sharing; quality of service). MNP ready at six service centres, awareness campaign delivered, implementation FY 2026/27 | AR | Omits the year's actual developments |
+| 6 | "Increasing investment in digital infrastructure" | Valid licences **fell 11%** (1,684 → 1,499); tower authorizations **fell 169 → 13**; 13 towers built, total 1,779 | AR | Requires qualification |
+| 7 | Household electricity access **85–88%**, "as of 2026" | **May well be correct.** The latest figure we hold is **84.6%** (REG, July 2025), and our grid connections rose **13.5%** over FY 2025/26 (1,768,830 → 2,008,342), so access has very likely risen since. Unsourced and undated in the brief; **REG to confirm the current figure** | REG · AR | Plausible but unsourced |
+| 8 | Grid connections ≈ **60%** of households; off-grid ≈ **25%** | We report **connections, not access rates**: **2,008,342** grid connections at June 2026, ▲13.5%. At 60% these imply ≈3.35 million households, or ≈4.3 persons per household — so the 60% is broadly consistent with our data. But the split is unsourced, and 60% + 25% = 85%, which leaves the brief's own 88% upper bound unsupported | AR · REG | Broadly consistent, but unsourced and internally inconsistent |
 | 9 | Commercial **5G** in parts of Kigali via **MTN Rwanda** | We confirm only that **"5G services commenced"**. No RURA source reports 5G by operator, location or subscription, and our mobile internet technology series covers 4G, 3G and EDGE only — 5G has no measured uptake in our reporting | AR | Existence confirmed; attribution and location unsupported |
 | 10 | A **third MNO licence** is under consideration, "the first material change to market structure in several years" | No RURA source. The market-structure development actually under way is **Mobile Number Portability** — service centres inspected and ready at six locations, awareness campaign delivered, implementation FY 2026/27. No spectrum award is reported | AR | Out of date — displaced by MNP |
 
@@ -123,8 +127,8 @@ Q3 2026 report is published, and their reference date should be confirmed.
 
 | Verdict | Claims |
 |---|---|
-| Wrong — correction required | **3** |
-| Misleading or out of date | **8** *(rows 4–10; row 8 covers two claims)* |
+| Wrong — correction required | **2** |
+| Misleading, unsourced or out of date | **9** *(rows 3–10; row 8 covers two claims)* |
 | Confirmed | **6** |
 | Not RURA indicators | **5** |
 | **Total** | **22** |

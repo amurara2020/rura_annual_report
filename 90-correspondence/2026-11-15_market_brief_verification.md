@@ -114,25 +114,22 @@ are not RURA's to validate.
 | 15 | Off-grid access approximately 25% of households | REG — not supplied |
 | 16 | A third MNO licence is reportedly under consideration | Unattributed in the brief; nothing in the report |
 
-### Item 13 — household electricity access: now answered, and the brief is high and misdated
+### Item 13 — household electricity access: plausible, but unsourced and undated
 
-The SDS in charge of ICT reports, citing **REG**, that household electricity access stood at **84.6% as of July
-2025**.
+REG reports household electricity access at **84.6% as of July 2025**.
 
-| | Figure | Date |
+| | Figure | Reference date |
 |---|---|---|
-| REG, via SDS | **84.6%** | July 2025 |
-| Brief | "approximately 85%–88%" | presented as "as of 2026" |
+| REG | **84.6%** | July 2025 |
+| Brief | "approximately 85%–88%" | presented as "as of 2026", no source |
 
-Two faults, both small but both avoidable:
+**The brief's range may well be right.** 84.6% is a July 2025 figure, and access has continued to rise: RURA's own
+grid connections grew **13.5%** over FY 2025/26, from 1,768,830 to 2,008,342. A 2026 position of 85–88% is
+consistent with that trajectory and may be conservative at the lower bound. We hold no 2026 figure to check it
+against.
 
-- **The range is high at both ends.** 84.6% sits *below* the floor of the brief's 85–88% band. The upper bound of
-  88% is three and a half points above the only figure we can source.
-- **The date is wrong.** The brief presents its electricity figures under the heading "As of 2026". The REG figure is
-  July 2025. A 2025 figure labelled 2026 overstates how current the brief is, in a section where access is rising
-  year on year.
-
-**Correction to give the author:** *household electricity access 84.6% as at July 2025 (source: REG).*
+So this is a sourcing fault, not a factual error: the brief cites no source and no date for a figure it presents as
+current. **Action:** confirm the current figure with REG, and require the brief to cite it with its date.
 
 The grid and off-grid split (items 14–15) remains unverified — REG has not supplied it, and the Annual Report
 reports **customer connections** (2,008,342, up 13.5% from 1,768,830) rather than any access rate. The brief's own

@@ -20,11 +20,11 @@ not yet published**. This is noted at §1.1, and means they should not be cited 
 
 ## Bottom line
 
-The brief is broadly sound in direction but contains **three factual errors** and rests substantially on figures
-RURA does not produce.
+The brief is broadly sound in direction but contains **two factual errors**, several unsourced figures, and rests
+substantially on figures RURA does not produce.
 
-Of 22 checkable claims: **6 are confirmed** by RURA publications, **3 are wrong and should be corrected**,
-**8 are out of date or misleading as written**, and **5 are not RURA indicators** and cannot be validated by the
+Of 22 checkable claims: **6 are confirmed** by RURA publications, **2 are wrong and should be corrected**,
+**9 are misleading, unsourced or out of date**, and **5 are not RURA indicators** and cannot be validated by the
 Authority.
 
 The most significant error is in the brief's own headline coverage table, where the 3G and 4G figures have been
@@ -36,7 +36,7 @@ source holders.
 
 ---
 
-## 1. Errors requiring correction
+## 1. Figures requiring correction or sourcing
 
 ### 1.1 Network coverage — the 3G and 4G figures are transposed
 
@@ -70,17 +70,23 @@ by at least one operator — is the union of the operators' footprints and is a 
 the three operators is also a 4G wholesaler, which affects what the 3G row represents. The Authority should settle
 which measure it publishes before a single national coverage figure enters circulation.
 
-### 1.2 Household electricity access — overstated and misdated
+### 1.2 Household electricity access — plausible, but unsourced and undated
 
 | | Figure | Reference date |
 |---|---|---|
-| Brief states | approximately 85%–88% | presented as 2026 |
-| Correct figure | **84.6%** | **July 2025** |
+| Brief states | approximately 85%–88% | presented as 2026, no source given |
+| Latest figure held | **84.6%** | **July 2025** *(REG)* |
 
-*Source: Rwanda Energy Group (REG).*
+**The brief's range may well be correct.** The most recent figure available to us is 84.6% at July 2025, and
+electricity access has continued to rise since: RURA's own grid connections grew **13.5%** over FY 2025/26, from
+1,768,830 to 2,008,342. A 2026 position of 85–88% is therefore consistent with the direction of travel, and may
+even be conservative at the lower bound.
 
-The correct figure sits below the floor of the brief's stated range, and its upper bound of 88% is 3.4 percentage
-points above the sourced position. The brief also presents a July 2025 figure as the 2026 position.
+The fault is one of sourcing rather than accuracy. The brief gives neither a source nor a reference date for a
+figure it presents as current, and the Authority holds no 2026 figure against which to check it.
+
+**Action:** the current access figure should be confirmed with **REG** and the brief required to cite it with its
+date, rather than treated as an error.
 
 The brief's further claim that grid connections represent approximately 60% of households and off-grid access
 approximately 25% is unsourced and cannot be confirmed. Those two components sum to 85%, which is the floor of the
@@ -241,8 +247,9 @@ No discrepancy was found between the two publications.
 
 1. **Do not endorse the brief in its present form.** Nine of its 22 checkable claims are not RURA indicators, and
    endorsement would adopt figures from GSMA, REG, NISR and unattributed sources as regulatory data.
-2. **Issue the three corrections** in §1: the transposed coverage figures, household electricity access at 84.6% as
-   at July 2025, and the direction of fixed broadband.
+2. **Issue the corrections** in §1: the transposed coverage figures and the direction of fixed broadband. The
+   electricity access range is plausible and should be sourced and dated rather than corrected — we will confirm
+   the current figure with REG.
 3. **Require the adoption claim to be sourced and re-stated** (§3). The GSMA figure must carry its report title,
    edition and year; it must be described as a modelled estimate of individuals; and it must not be presented as
    comparable with RURA's subscription figures. RURA does not measure internet users and cannot endorse a
