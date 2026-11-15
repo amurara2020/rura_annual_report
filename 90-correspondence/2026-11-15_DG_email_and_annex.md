@@ -6,8 +6,8 @@
 
 Dear Director General,
 
-We have reviewed the market brief against the Annual Report FY 2025/26 and the ICT Sector Statistics Report for Q4
-2025. The claim-by-claim comparison is annexed.
+We have reviewed the market brief against the Annual Report FY 2025/26 and the ICT Sector Statistics Reports for
+Q1 2025 to Q2 2026. The claim-by-claim comparison is annexed.
 
 Of 22 checkable claims, **6 are confirmed, 3 are wrong, 8 are misleading or out of date, and 5 are not RURA
 indicators** and cannot be validated by the Authority.
@@ -48,9 +48,15 @@ Data Analytics Team
 
 # Annex — What the brief claims against what we found
 
-**Sources:** **AR** = Annual Report FY 2025/26 · **Q4** = ICT Sector Statistics Report Q4 2025 · **OR** = quarterly
-operator returns, June 2026 (coverage is not published in AR or Q4) · **REG** = Rwanda Energy Group · **GSMA** = the
-brief's own cited source
+**Sources:** **AR** = Annual Report FY 2025/26 · **Q2-26** = ICT Sector Statistics Report Q2 2026 (1 April –
+30 June 2026, the same reference date as the Annual Report) · **Q4-25** = ICT Sector Statistics Report Q4 2025 ·
+**OR** = ICT department, coverage position as at June 2026, understood to come from the Q3 2026 statistics report
+**currently in preparation and not yet published** · **REG** = Rwanda Energy Group · **GSMA** = the brief's own
+cited source
+
+Coverage is not reported in any published RURA report: it is absent from all six quarterly reports from Q1 2025 to
+Q2 2026 and from the Annual Report. The coverage figures in rows 1 and 2 should not be cited externally until the
+Q3 2026 report is published, and their reference date should be confirmed.
 
 ## Wrong — correction required
 
@@ -64,8 +70,8 @@ brief's own cited source
 
 | # | The brief claims | What we found | Source | Verdict |
 |---|---|---|---|---|
-| 4 | Unique mobile internet users ≈ **21%** of population | RURA counts connection points, not people, and does not produce a unique-user figure. 21% implies **3.70 subscriptions per user**. No GSMA edition cited | AR · GSMA | Not a RURA measure; does not reconcile |
-| 5 | "Continued broadband expansion" | Fixed broadband **declined**: 0.611 → 0.584 per 100 inhabitants; 84,152 subscriptions | Q4 · AR | Wrong in direction for fixed broadband |
+| 4 | Unique mobile internet users ≈ **21%** of population | RURA counts connection points, not people, and does not produce a unique-user figure. Our published position is **77.6 internet subscriptions per 100 inhabitants** at June 2026. 21% would imply **3.70 subscriptions per user**. No GSMA edition cited | Q2-26 · AR · GSMA | Not a RURA measure; does not reconcile |
+| 5 | "Continued broadband expansion" | Fixed broadband **declined**: 0.611 → 0.584 per 100 inhabitants; 84,152 subscriptions | Q4-25 · AR | Wrong in direction for fixed broadband |
 | 6 | No regulatory instrument named; **no mention of Mobile Number Portability** | Two regulations made in-year (infrastructure sharing; quality of service). MNP ready at six service centres, awareness campaign delivered, implementation FY 2026/27 | AR | Omits the year's actual developments |
 | 7 | "Increasing investment in digital infrastructure" | Valid licences **fell 11%** (1,684 → 1,499); tower authorizations **fell 169 → 13**; 13 towers built, total 1,779 | AR | Requires qualification |
 | 8 | Grid connections ≈ **60%** of households; off-grid ≈ **25%** | We report **connections, not access rates**: **2,008,342** grid connections at June 2026, ▲13.5% from 1,768,830. At 60% these imply ≈3.35 million households, or ≈4.3 persons per household — so the 60% is broadly consistent with our data. But the split is unsourced, and 60% + 25% = 85%, which leaves the brief's own 88% upper bound unsupported | AR · REG | Broadly consistent, but unsourced and internally inconsistent |
@@ -77,10 +83,10 @@ brief's own cited source
 | # | The brief claims | What we found | Source | Verdict |
 |---|---|---|---|---|
 | 11 | Two licensed mobile network operators | MTN Rwandacell Plc, Airtel Rwanda Ltd | AR | Correct |
-| 12 | MTN market leader ≈ **66%** | **66.3%** (Dec 2025); **65.8%** (Jun 2026) | Q4 · AR | Correct — confirmed twice |
-| 13 | Airtel the second operator | **33.7%** (Dec 2025); **34.2%** (Jun 2026) | Q4 · AR | Correct |
+| 12 | MTN market leader ≈ **66%** | **66.3%** (Dec 2025); **65.8%** (Jun 2026), confirmed in the Q2 2026 report | Q2-26 · Q4-25 · AR | Correct — confirmed twice |
+| 13 | Airtel the second operator | **33.7%** (Dec 2025); **34.2%** (Jun 2026) | Q2-26 · Q4-25 · AR | Correct |
 | 14 | RURA responsible for licensing and spectrum | Confirmed | AR | Correct |
-| 15 | Growing international bandwidth | Equipped **▲58.7%** to 1,197,355 Mbps; used **▲22.0%** to 345,864 Mbps | AR | Correct — and understated |
+| 15 | Growing international bandwidth | Equipped **▲58.7%** to 1,197.4 Gbps; used **▲33.0%** to 379.9 Gbps | Q2-26 | Correct — and understated. *(The Annual Report states used bandwidth as 345,864 Mbps, ▲22.0%; see the note below.)* |
 | 16 | Multiple regional fibre routes | Fibre backbone, metro and access reported by operator | AR | Consistent |
 
 ## Not RURA indicators — the Authority cannot validate
@@ -105,16 +111,31 @@ brief's own cited source
 
 ## Assurance on our own figures
 
-The Annual Report's ICT series was cross-checked against the four published 2025 quarterly reports. **No discrepancy
-was found**, allowing for the different reference periods — the quarterly series reports calendar quarters, the
-Annual Report June to June.
+The Annual Report's ICT series was cross-checked against the published quarterly reports, including **Q2 2026,
+which covers 1 April to 30 June 2026 — the Annual Report's own reference date**. This is a direct comparison, not an
+approximate one.
 
-| Indicator | Q4 2025 (31 Dec 2025) | Annual Report (30 Jun 2026) |
-|---|---|---|
-| Mobile-cellular subscriptions | 13,685,892 | 14,501,766 |
-| Mobile subscriptions per 100 inhabitants | 97.03 | 100.6 |
-| MTN / Airtel market share | 66.3% / 33.7% | 65.8% / 34.2% |
-| Internet subscriptions | 10,487,460 | 11,193,584 |
-| 4G share of mobile internet | 56.0% | 56.8% |
-| Used international bandwidth | 344,907 Mbps | 345,864 Mbps |
-| Fixed broadband per 100 inhabitants | 0.611 | 0.584 |
+| Indicator | Q2 2026 report (30 Jun 2026) | Annual Report (30 Jun 2026) | Agrees? |
+|---|---|---|---|
+| Mobile-cellular subscriptions | 14,501,766 | 14,501,766 | **Exact** |
+| Mobile subscriptions per 100 inhabitants | 100.58 | 100.6 | **Exact** |
+| Internet subscriptions | 11,193,584 | 11,193,584 | **Exact** |
+| Internet subscriptions per 100 inhabitants | 77.6 | — | n/a |
+| MTN / Airtel market share | 65.8% / 34.2% | 65.8% / 34.2% | **Exact** |
+| Fixed telephone per 100 inhabitants | 0.076 | 0.076 | **Exact** |
+| Active Pay TV subscribers | 193,312 | 193,312 | **Exact** |
+| Equipped international bandwidth | 1,197.4 Gbps | 1,197,355 Mbps | **Exact** |
+| **Used international bandwidth** | **379.9 Gbps (▲33.0%)** | **345,864 Mbps (▲22.0%)** | **Does not agree** |
+
+**One discrepancy requires attention in our own reporting.** Every ICT figure in the Annual Report matches the
+published Q2 2026 report exactly, with one exception: **used international internet bandwidth**. The Annual Report
+gives 283,607 → 345,864 Mbps (▲22.0%) in its at-a-glance card, its narrative and its statistical annex; the
+published Q2 2026 report gives 285.7 → 379.9 Gbps (▲33.0%) for the same period.
+
+The Annual Report figure also sits below the previous quarter's published value: the Q1 2026 report records used
+bandwidth of 351,015 Mbps at March 2026, which would imply a fall over the final quarter, where the Q2 2026 report
+records a rise to 379.9 Gbps.
+
+This should be resolved by the ICT department and the Annual Report corrected before printing. It does not affect
+any conclusion in this review — the brief's claim that bandwidth is growing is correct either way, and understated
+on both sets of figures.

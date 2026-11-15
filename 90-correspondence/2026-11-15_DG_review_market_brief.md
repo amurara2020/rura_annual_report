@@ -5,13 +5,16 @@
 **Date:** 15 November 2026
 **Subject:** Accuracy of data used in the market brief submitted for review
 
-**Sources used for this review:** RURA Annual Report FY 2025/26; RURA ICT Sector Statistics Report Q4 2025 (and
-Q1–Q3 2025); Rwanda Energy Group (REG); GSMA, as cited by the brief itself.
+**Sources used for this review:** RURA Annual Report FY 2025/26; RURA ICT Sector Statistics Reports for Q1, Q2, Q3
+and Q4 2025 and Q1 and Q2 2026; Rwanda Energy Group (REG); GSMA, as cited by the brief itself.
 
-Twenty of the 22 claims are settled from the two RURA publications. The two network coverage claims are the
-exception: coverage is **not reported in either publication**, so those figures are drawn from the ICT department's
-own records, derived from the quarterly operator returns that also feed the Annual Report's ICT chapter. This is
-noted at §1.1 and matters only because a coverage figure cited to a published report could not be found in it.
+The Q2 2026 report covers 1 April to 30 June 2026 — the Annual Report's own reference date — so the two can be
+compared directly. See §6.
+
+Twenty of the 22 claims are settled from the RURA publications. The two network coverage claims are the exception:
+coverage appears in **none** of the six quarterly reports from Q1 2025 to Q2 2026, nor in the Annual Report. Those
+figures come from the ICT department, understood to be drawn from the **Q3 2026 report currently in preparation and
+not yet published**. This is noted at §1.1, and means they should not be cited externally yet.
 
 ---
 
@@ -42,9 +45,9 @@ source holders.
 | 3G population coverage | approximately 99% | **96.53%** |
 | 4G population coverage | approximately 96% | **98.69%** |
 
-*Source: ICT department records from the quarterly operator returns, position as at June 2026, averaged across the
-reporting operators (MTN, Airtel, KTRN). Not published in the Annual Report or the quarterly statistics report —
-see the note below.*
+*Source: ICT department, position as at June 2026, averaged across the reporting operators (MTN, Airtel, KTRN),
+understood to come from the Q3 2026 statistics report currently in preparation. Not published — see the note
+below.*
 
 Each figure in the brief is within approximately 2.5 percentage points of the **other** technology's true value,
 indicating the two have been swapped rather than independently misstated.
@@ -56,10 +59,11 @@ increase of 22.8% *(Source: Annual Report FY 2025/26)*.
 
 **Two points before these figures are quoted publicly.**
 
-*First, they are not in either RURA publication.* The quarterly statistics series carried a coverage table until
-2017 and no longer does; the Annual Report has never contained one. The figures come from the operator returns —
-the same returns that feed the Annual Report's ICT chapter — but they are not themselves published. Anyone citing
-them should cite the operator returns, not the Annual Report, because the figures cannot be found in it.
+*First, they are not yet published anywhere.* The quarterly statistics series carried a coverage table until 2017
+and no longer does: coverage is absent from all six quarterly reports from Q1 2025 to Q2 2026, and the Annual Report
+has never contained one. These figures are understood to come from the Q3 2026 report still in preparation, so they
+are draft figures. They should not be cited externally until that report is published, and their reference date
+should be confirmed — the figures are given as the June 2026 position but originate in work on a later quarter.
 
 *Second, an average across operators is not national coverage.* National coverage — the share of population reached
 by at least one operator — is the union of the operators' footprints and is a different and higher measure. One of

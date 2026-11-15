@@ -242,7 +242,34 @@ inclusion agenda in its opening paragraph and offers no evidence for it.
 
 ---
 
-## 7. Three items in our own report to tidy (found during this check)
+## 7. Items in our own report to correct (found during this check)
+
+### MATERIAL — used international internet bandwidth disagrees with the published quarterly report
+
+The Annual Report states used international internet bandwidth as **283,607 → 345,864 Mbps (▲22.0%)**, in three
+places: the FY 2025/26 at-a-glance card, the §2.1.4.6 narrative and the statistical annex time series.
+
+The published **ICT Sector Statistics Report for Q2 2026**, covering 1 April to 30 June 2026 — the Annual Report's
+own reference date — states **285.7 → 379.9 Gbps (▲33.0%)**.
+
+Corroborating evidence that the Annual Report figure is the wrong one:
+
+- Equipped bandwidth matches the quarterly report exactly (754,578 → 1,197,355 Mbps), so only the *used* series is
+  affected.
+- The **Q1 2026** report records used bandwidth of **351,015 Mbps at March 2026** — higher than the Annual Report's
+  claimed June 2026 figure of 345,864, which would imply a fall over the final quarter, where the published Q2 2026
+  report records a rise.
+- 345,864 is close to the Q4 2025 published value of 344,907 Mbps, suggesting a figure carried over from an earlier
+  quarter.
+
+**Action:** ICT to confirm the correct figure and basis; correct all three locations in the Annual Report before
+printing. Note that the quarterly series changed units from Mbps to Gbps between Q1 2026 and Q2 2026, which may be
+where the error entered.
+
+**Also affected:** the FY 2025/26 Board briefing deck carries 345,864 Mbps and ▲22.0% on its ICT slide, and will
+need the same correction.
+
+### Minor
 
 Raised here so they are fixed in our text, not because the brief is wrong about them:
 
