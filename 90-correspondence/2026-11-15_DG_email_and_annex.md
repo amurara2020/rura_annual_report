@@ -6,8 +6,8 @@
 
 Dear Director General,
 
-We have reviewed the market brief against the Annual Report FY 2025/26 and the ICT Sector Statistics Reports for
-Q1 2025 to Q2 2026. The claim-by-claim comparison is annexed.
+We have reviewed the market brief against the Annual Report FY 2025/26 and the six published ICT Sector Statistics
+Reports from Q1 2025 to Q2 2026. The claim-by-claim comparison is annexed.
 
 Of 22 checkable claims, **6 are confirmed, 3 are wrong, 8 are misleading or out of date, and 5 are not RURA
 indicators** and cannot be validated by the Authority.
@@ -15,26 +15,46 @@ indicators** and cannot be validated by the Authority.
 **Two findings matter most.**
 
 The brief's coverage table has its two figures transposed. It reports 3G population coverage at about 99% and 4G at
-about 96%; the June 2026 position is **3G at 96.53% and 4G at 98.69%**. As written, the brief tells readers that 3G
-reaches more of the population than 4G, which reverses both the position and the year's principal ICT finding — 4G
-rising to 56.8% of mobile internet subscriptions.
+about 96%; the position reported by the ICT department is **3G at 96.53% and 4G at 98.69%**. As written, the brief
+tells readers that 3G reaches more of the population than 4G, which reverses both the position and the year's
+principal ICT finding — 4G rising to 56.8% of mobile internet subscriptions.
 
 The brief's central argument rests on a GSMA estimate that unique mobile internet users are about 21% of the
 population. RURA does not measure internet users; we count connection points, and our indicator framework assigns
-no collection source to a unique-user figure. The estimate also does not reconcile with our data: 21% would require
-every mobile internet user to hold **3.7 active subscriptions**. The brief cites no GSMA edition, so its definition
-cannot be checked.
+no collection source to a unique-user figure. Our published position is 77.6 internet subscriptions per 100
+inhabitants at June 2026. The estimate also does not reconcile with our data: 21% would require every mobile
+internet user to hold **3.7 active subscriptions**. The brief cites no GSMA edition, so its definition cannot be
+checked.
 
 Household electricity access is also overstated at 85–88% against **84.6% (REG, July 2025)**, and presented as the
 2026 position.
+
+**One caution on the coverage figures.** They are not published anywhere. Coverage is absent from all six quarterly
+reports and from the Annual Report, and the figures we hold are understood to come from the Q3 2026 report still in
+preparation. They are sound for correcting the brief internally, but should not be cited externally until that
+report is published, and their reference date should be confirmed.
+
+**One matter in our own reporting, which I would rather raise now.** Cross-checking against the Q2 2026 statistics
+report — which covers 1 April to 30 June 2026, the Annual Report's own reference date — every ICT figure matches
+exactly, with one exception. Used international internet bandwidth appears in the Annual Report as 283,607 to
+345,864 Mbps, a rise of 22.0%; the published Q2 2026 report gives 285.7 to 379.9 Gbps, a rise of 33.0%. The Q1 2026
+report records 351,015 Mbps at March 2026, which is above the Annual Report's June figure and would imply a fall in
+the final quarter. The Annual Report figure appears in three places — the at-a-glance card, the narrative and the
+statistical annex — and I recommend ICT confirms the correct figure and that all three are corrected before
+printing. It affects no conclusion in this review: bandwidth grew on either set of figures.
+
+Every other indicator we checked — subscriptions, penetration, market share, fixed telephony, Pay TV and equipped
+bandwidth — matches the published quarterly figures exactly.
 
 **We recommend** that the Authority does not endorse the brief in its present form; that the author is given the
 three corrections above; that the GSMA figure is properly sourced and not presented as comparable with ours; and
 that population, economic growth and the grid split are referred to NISR, MINECOFIN and REG.
 
-One matter for our own attention: we collect network coverage from every operator each quarter, for 2G through 5G,
-and publish none of it. That is why an outside author used third-party estimates rather than our figures. I
-recommend restoring a coverage table to the quarterly publication and summarising it in the Annual Report.
+**One standing matter.** We collect network coverage from every operator each quarter, for 2G through 5G, and have
+published none of it in six consecutive quarters. That is why an outside author used third-party estimates rather
+than our figures, and why answering a question about coverage in our own sector required unpublished records. I
+recommend restoring a coverage table to the quarterly publication and summarising it in the Annual Report. The data
+is already collected and validated, so the cost is editorial.
 
 The team can supply our verified indicator set today and review a revised draft at short notice.
 
