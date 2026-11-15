@@ -213,3 +213,62 @@ reference to internal returns.
 **Proposal:** restore a coverage table — geographic and population, by technology generation, including 5G — to the
 quarterly publication, and carry a summary in the Annual Report. The data is already collected and validated each
 quarter, so the cost is editorial rather than analytical.
+
+---
+
+## Annex — Claim-by-claim comparison
+
+**Sources:** **AR** = RURA Annual Report FY 2025/26 · **Q4** = RURA ICT Sector Statistics Report, Q4 2025 ·
+**OR** = RURA operator returns, June 2026 · **REG** = Rwanda Energy Group · **GSMA** = the brief's own cited source
+
+### A. Wrong — correction required (3)
+
+| # | The brief states | What the sources show | Source | Verdict |
+|---|---|---|---|---|
+| 1 | 3G population coverage ≈ **99%** | **96.53%** | OR | **Wrong** — transposed with 4G |
+| 2 | 4G population coverage ≈ **96%** | **98.69%** | OR | **Wrong** — transposed with 3G |
+| 3 | Household electricity access ≈ **85–88%**, "as of 2026" | **84.6%** as at **July 2025** | REG | **Wrong** — above the sourced figure, and misdated |
+
+### B. Misleading or out of date (4)
+
+| # | The brief states | What the sources show | Source | Verdict |
+|---|---|---|---|---|
+| 4 | Unique mobile internet users ≈ **21%** of population (2025), presented as the adoption position | 11,193,584 subscriptions = **77.6 per 100 inhabitants** (Jun 2026); **74.35 per 100 inhabitants** (Dec 2025). Both measures valid; they count different things | AR · Q4 · GSMA | **Misleading as written** — metric not stated |
+| 5 | "Continued broadband expansion" | Fixed broadband **fell**: 0.611 → 0.584 per 100 inhabitants; 84,152 subscriptions | Q4 · AR | **Wrong in direction** for fixed broadband |
+| 6 | Regulatory section names no instrument; no mention of Mobile Number Portability | Two regulations made in-year: **No. 20/R/ICT/RURA/2026** (infrastructure sharing), **No. 21/R/ICT/RURA/2026** (quality of service). **MNP** inspected and ready at 6 service centres, awareness campaign delivered, implementation FY 2026/27 | AR | **Out of date** — omits the year's actual developments |
+| 7 | "Increasing investment in digital infrastructure" | Valid licences/authorizations **fell 11%** (1,684 → 1,499); tower authorizations **fell 169 → 13**; 13 towers built, total 1,779. Shift from build-out to optimisation | AR | **Requires qualification** |
+
+### C. Confirmed (6)
+
+| # | The brief states | What the sources show | Source | Verdict |
+|---|---|---|---|---|
+| 8 | Two licensed mobile network operators | MTN Rwandacell Plc, Airtel Rwanda Ltd | AR | **Correct** |
+| 9 | MTN market leader, ≈ **66%** | **66.3%** (Dec 2025); **65.8%** (Jun 2026) | Q4 · AR | **Correct** — confirmed twice; should state date and service |
+| 10 | Airtel the second operator | **33.7%** (Dec 2025); **34.2%** (Jun 2026) | Q4 · AR | **Correct** |
+| 11 | RURA responsible for licensing, spectrum, oversight | Confirmed | AR | **Correct** |
+| 12 | Growing international bandwidth capacity | Equipped **▲58.7%** to 1,197,355 Mbps; used **▲22.0%** to 345,864 Mbps | AR | **Correct** — and understated; the brief gives no figures |
+| 13 | Multiple regional fibre routes to submarine cables | Fibre backbone, metro and access reported by operator | AR | **Consistent** |
+
+### D. Not RURA indicators — the Authority cannot validate (9)
+
+| # | The brief states | What the sources show | Source | Verdict |
+|---|---|---|---|---|
+| 14 | Population ≈ **14 million** | RURA holds no population figure. The AR's implied denominator is **≈ 14.42 million** | NISR | **Cannot validate** — and ≈0.4m low |
+| 15 | ≈ **445** people per km² | No RURA figure | NISR | **Cannot validate** |
+| 16 | Economy grew **9.4%** (2025), **9.7%** (H1 2026) | No RURA figure | NISR / MINECOFIN | **Cannot validate** |
+| 17 | **>1 million** additional mobile internet users by 2031 | GSMA projection; no RURA equivalent | GSMA | **Cannot validate** |
+| 18 | Grid connections ≈ **60%** of households | Not supplied. AR reports **connections** (2,008,342, ▲13.5%), not an access rate. With item 19 sums to 85%, leaving the brief's own 88% unsupported | REG | **Cannot validate** |
+| 19 | Off-grid access ≈ **25%** of households | Not supplied | REG | **Cannot validate** |
+| 20 | A **third MNO licence** is reportedly under consideration | No RURA source. The actual market-structure development is MNP (item 6) | none | **Cannot validate** — unattributed |
+| 21 | Commercial **5G** in parts of Kigali via **MTN Rwanda** | AR records only that "5G services commenced". No RURA publication reports 5G by operator, location or subscription | AR | **Cannot validate** — attribution unsupported |
+| 22 | No official **spectrum package** announced for a third licence | No spectrum award reported; consistent as far as RURA records go | AR | **Cannot confirm or deny** |
+
+### Summary
+
+| Verdict | Claims |
+|---|---|
+| Wrong — correction required | **3** |
+| Misleading or out of date | **4** |
+| Confirmed by RURA publications | **6** |
+| Not RURA indicators | **9** |
+| **Total checkable claims** | **22** |
