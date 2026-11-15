@@ -5,8 +5,13 @@
 **Date:** 15 November 2026
 **Subject:** Accuracy of data used in the market brief submitted for review
 
-**Sources used for this review:** RURA Annual Report FY 2025/26; RURA ICT Sector Statistics Reports, Q1–Q4 2025;
-coverage figures provided by the ICT department as at June 2026; Rwanda Energy Group (REG).
+**Sources used for this review:** RURA Annual Report FY 2025/26; RURA ICT Sector Statistics Report Q4 2025 (and
+Q1–Q3 2025); Rwanda Energy Group (REG); GSMA, as cited by the brief itself.
+
+Twenty of the 22 claims are settled from the two RURA publications. The two network coverage claims are the
+exception: coverage is **not reported in either publication**, so those figures are drawn from the ICT department's
+own records, derived from the quarterly operator returns that also feed the Annual Report's ICT chapter. This is
+noted at §1.1 and matters only because a coverage figure cited to a published report could not be found in it.
 
 ---
 
@@ -37,7 +42,9 @@ source holders.
 | 3G population coverage | approximately 99% | **96.53%** |
 | 4G population coverage | approximately 96% | **98.69%** |
 
-*Source: ICT department, position as at June 2026, averaged across the reporting operators (MTN, Airtel, KTRN).*
+*Source: ICT department records from the quarterly operator returns, position as at June 2026, averaged across the
+reporting operators (MTN, Airtel, KTRN). Not published in the Annual Report or the quarterly statistics report —
+see the note below.*
 
 Each figure in the brief is within approximately 2.5 percentage points of the **other** technology's true value,
 indicating the two have been swapped rather than independently misstated.
@@ -49,12 +56,10 @@ increase of 22.8% *(Source: Annual Report FY 2025/26)*.
 
 **Two points before these figures are quoted publicly.**
 
-*First, the collection source should be stated.* Coverage is not reported in any RURA publication — the quarterly
-statistics series carried a coverage table until 2017 and no longer does, and the Annual Report has never contained
-one. The figures above are therefore drawn from internal records. The Authority's standing operator return does
-require geographic and population coverage for 2G, 3G, 4G and 5G each quarter, but whether these particular figures
-come from those returns, from quality-of-service monitoring or from another exercise should be confirmed and stated
-before they are cited externally.
+*First, they are not in either RURA publication.* The quarterly statistics series carried a coverage table until
+2017 and no longer does; the Annual Report has never contained one. The figures come from the operator returns —
+the same returns that feed the Annual Report's ICT chapter — but they are not themselves published. Anyone citing
+them should cite the operator returns, not the Annual Report, because the figures cannot be found in it.
 
 *Second, an average across operators is not national coverage.* National coverage — the share of population reached
 by at least one operator — is the union of the operators' footprints and is a different and higher measure. One of
@@ -270,14 +275,14 @@ quarter, so the cost is editorial rather than analytical.
 ## Annex — Claim-by-claim comparison
 
 **Sources:** **AR** = RURA Annual Report FY 2025/26 · **Q4** = RURA ICT Sector Statistics Report, Q4 2025 ·
-**ICT** = ICT department records, position as at June 2026 · **REG** = Rwanda Energy Group · **GSMA** = the brief's own cited source
+**OR** = RURA quarterly operator returns, June 2026 (not published in AR or Q4 — see §1.1) · **REG** = Rwanda Energy Group · **GSMA** = the brief's own cited source
 
 ### A. Wrong — correction required (3)
 
 | # | The brief states | What the sources show | Source | Verdict |
 |---|---|---|---|---|
-| 1 | 3G population coverage ≈ **99%** | **96.53%** | ICT | **Wrong** — transposed with 4G |
-| 2 | 4G population coverage ≈ **96%** | **98.69%** | ICT | **Wrong** — transposed with 3G |
+| 1 | 3G population coverage ≈ **99%** | **96.53%** | OR | **Wrong** — transposed with 4G |
+| 2 | 4G population coverage ≈ **96%** | **98.69%** | OR | **Wrong** — transposed with 3G |
 | 3 | Household electricity access ≈ **85–88%**, "as of 2026" | **84.6%** as at **July 2025** | REG | **Wrong** — above the sourced figure, and misdated |
 
 ### B. Misleading or out of date (4)
