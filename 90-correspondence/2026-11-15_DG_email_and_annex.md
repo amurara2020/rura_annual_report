@@ -9,8 +9,20 @@ Dear Director General,
 We have reviewed the market brief against the Annual Report FY 2025/26 and the six published ICT Sector Statistics
 Reports from Q1 2025 to Q2 2026. The claim-by-claim comparison is annexed.
 
-Of 22 checkable claims, **6 are confirmed, 2 are wrong, 9 are misleading, unsourced or out of date, and 5 are not
-RURA indicators** and cannot be validated by the Authority.
+**Conclusion: the data is not reliable enough for the Authority to endorse.** Of 22 checkable claims, only **6 are
+confirmed** by RURA publications. **2 are wrong**, **9 are misleading, unsourced or out of date**, and **5 are
+figures RURA does not produce**.
+
+The brief is a secondary compilation rather than a data document. Most of its quantitative content comes from GSMA,
+the World Bank, NISR and REG rather than from RURA — and in the one place it reports our own sector's headline
+numbers, network coverage, it has them the wrong way round.
+
+Its overall picture is broadly right in direction: extensive network coverage, strong government commitment to ICT,
+and a real gap between network availability and usage. The numbers supporting that picture are not dependable, and
+several are out of date.
+
+**Our advice is that the Authority should not endorse the brief, and should not allow it to be cited as reflecting
+RURA data.** If the author corrects and re-sources it, it would be a reasonable overview.
 
 **Two findings matter most.**
 
