@@ -4,7 +4,8 @@
 **Source of the brief:** shared with the DG by a third party; the DG notes it was drafted with ChatGPT
 **Checked against:** RURA Annual Report FY 2025/26 (management-agreed version), ICT and Energy chapters, FY 2025/26
 in Numbers and the statistical annex; the published ICT Sector Statistics Reports for Q1–Q4 2025; the 2017 quarterly
-telecom statistics report; and RURA's standing mobile network operator return form
+telecom statistics report; RURA's standing mobile network operator return form; and coverage, adoption and
+electricity-access figures supplied by the SDS in charge of ICT on 15 November 2026
 **Prepared by:** Data Analytics Team
 
 ---
@@ -15,19 +16,27 @@ The brief contains **22 checkable factual claims**. Of these:
 
 | | Claims |
 |---|---|
-| Confirmed by the Annual Report | 6 |
-| Published by RURA, but in the quarterly statistics series — not the Annual Report | 2 |
-| Not RURA indicators at all | 7 |
+| Confirmed by RURA publications | 6 |
+| Verified from RURA operator returns — **the brief has them transposed** | 2 |
+| Verified via REG — the brief's figure is high and misdated | 1 |
+| Not RURA indicators, still unverified | 6 |
 | Materially misleading as written | 3 |
 | Out of date or contradicted in direction | 4 |
 
-Nothing in the brief is fabricated outright. The problem is different and more awkward: **the brief's most quotable
-numbers are the ones RURA cannot stand behind**, because they are not RURA indicators at all. If the Authority is
-seen to have reviewed and accepted the brief, it adopts figures from GSMA, the World Bank and unattributed sources
-as though they were regulatory data.
+Nothing in the brief is fabricated. Two problems remain after verification.
 
-**One claim should be corrected before the brief circulates further** — the mobile internet adoption figure
-(item 11), which sits 57 percentage points away from RURA's own published measure of the same subject.
+**First, the brief has swapped its two coverage figures.** It reports 3G population coverage at about 99% and 4G at
+about 96%. The operator returns for June 2026 give **3G at 96.53% and 4G at 98.69%** — the brief's numbers are
+roughly right in magnitude but attached to the wrong technologies. As written, the brief says 3G reach exceeds 4G
+reach, which is the reverse of the position and the reverse of the story the Annual Report tells about 4G migration.
+
+**Second, the brief's most quotable numbers are still not RURA's.** Population, economic growth, the grid and
+off-grid split and the third-licence report belong to NISR, MINECOFIN, REG and no named source respectively. If the
+Authority is recorded as having reviewed and accepted the brief, it adopts them as regulatory data.
+
+**One claim should still be corrected before the brief circulates further** — the mobile internet adoption figure
+(item 11). The SDS in charge of ICT confirms both figures are correct on their own definitions, which makes the
+labelling, not the arithmetic, the thing to fix.
 
 ---
 
@@ -48,58 +57,85 @@ as at which date, invites exactly the question the DG is being asked.
 
 ---
 
-## 2. Network coverage — RURA collects it, but no longer publishes it
+## 2. Network coverage — now verified, and the brief has it the wrong way round
 
-**Correction to an earlier draft of this note.** We first recorded coverage as a RURA-published indicator, on the
-strength of the older quarterly series. Having now read all four 2025 quarterly reports, that is wrong and the
-position is narrower:
+Coverage is **not** reported in any current RURA publication: the quarterly statistics series carried a
+*Mobile network coverage per type of technology* table in 2017 and has since dropped it, and the Annual Report has
+never had one. (This corrects an earlier draft of this note, which recorded coverage as a published indicator on the
+strength of the 2017 report. The word "coverage" does not appear in any of the four 2025 quarterly reports, and
+neither does 5G.)
 
-- The **2017** quarterly report carried a standing table, *Mobile network coverage per type of technology*,
-  reporting geographic and population coverage for each generation.
-- The **current series does not.** The ICT Sector Statistics Reports for Q1, Q2, Q3 and Q4 of 2025 contain **no
-  coverage section at all** — the word "coverage" does not appear in any of the four, and neither does 5G.
-- The Annual Report carries none either.
+The Authority does collect it. The standing operator return requires every MNO to report geographic and population
+coverage for 2G, 3G, 4G and 5G each quarter. The SDS in charge of ICT has now supplied the June 2026 position.
 
-So **no current RURA publication reports network coverage**, and the brief's figures cannot be checked against
-anything we have published.
+**Average population coverage across the reported operators (MTN, Airtel and KTRN), June 2026:**
 
-**But the Authority does hold the data.** The standing operator return ("Mobile Network Operator Form", section 3,
-*Mobile network Coverage*) requires every MNO to report, each quarter, geographic coverage (%) and population
-coverage (%) for **2G, 3G, 4G and 5G**, plus base stations by technology and by province. The ICT department can
-therefore confirm or refute items 7 and 8 from the operator returns within the day.
+| Technology | Population coverage | Brief's claim | Verdict |
+|---|---|---|---|
+| 3G | **96.53%** | "approximately 99%" | **Wrong — this is close to the 4G figure** |
+| 4G | **98.69%** | "approximately 96%" | **Wrong — this is close to the 3G figure** |
 
-| # | Claim in the brief | Status |
-|---|---|---|
-| 7 | 3G population coverage approximately 99% | **Not published by RURA. Verifiable from operator returns.** The last figure we hold is from June 2017: 3G population coverage 93.11%, geographic 76.27% |
-| 8 | 4G population coverage approximately 96% | **Not published by RURA. Verifiable from operator returns.** June 2017: 4G LTE population coverage 64.30%, geographic 51.40% |
+The two figures are transposed. Each is within about two and a half points of the *other* technology's true value,
+which is the signature of a swap rather than of independent error. The consequence matters: the brief tells the
+reader that 3G reaches more of the population than 4G, when 4G in fact reaches more — and 4G migration is the
+central ICT story of the year in the Annual Report, where the 4G share of mobile internet rose from 50.9% to 56.8%.
 
-The brief uses the right metric name — *population* coverage is RURA's own term, and the higher of the two measures.
-Anyone quoting a coverage figure should say which of the two it is, since geographic coverage is materially lower
-for every generation.
+**Correction to give the author:** *3G population coverage 96.53%, 4G population coverage 98.69%, as at June 2026.*
 
-**The 2017 comparators are given only to show order of magnitude and direction of travel. They are nine years old
-and must not be published or quoted.**
+### Two methodological points to settle before these figures are published anywhere
+
+1. **An average across operators is not national coverage.** The figures are the unweighted mean of three
+   operators' self-reported population coverage. National coverage — the share of the population covered by *at
+   least one* operator — is the union of the three footprints and would be **higher** than any average. If the brief
+   is to say "Rwanda's 4G population coverage is X%", X should be the any-operator figure, not a mean. The mean also
+   gives a small operator the same weight as MTN.
+2. **KTRN is a 4G wholesaler.** If KTRN reports no 3G network, including it in a 3G average would understate 3G; if
+   it was excluded, the 3G figure is a two-operator average and the two rows rest on different denominators. Worth
+   confirming with ICT which operators are in each row.
+
+Neither point suggests the figures are wrong. Both need answering before the Authority puts a single national
+coverage number into circulation, because it is the kind of figure that gets quoted for years.
 
 ---
 
-## 3. Not RURA indicators at all — we can neither confirm nor deny
+## 3. Not RURA indicators — one now answered by REG, six still unverified
 
-The report contains no figure for any of these, and they are not RURA's to validate.
+RURA publishes no figure for any of these. Item 13 has since been answered via REG and is dealt with below; the rest
+are not RURA's to validate.
 
 | # | Claim in the brief | Where it would have to come from |
 |---|---|---|
 | 9 | Population approximately 14 million; 445 people per km² | NISR — note the report's own implied denominator is ~14.42 million |
 | 10 | Economy grew 9.4% in 2025 and 9.7% in H1 2026 | NISR / MINECOFIN |
 | 12 | More than one million additional mobile internet users by 2031 | GSMA projection |
-| 13 | Household electricity access approximately 85–88% | EDCL / MININFRA |
-| 14 | Grid connections approximately 60% of households | EDCL / MININFRA |
-| 15 | Off-grid access approximately 25% of households | EDCL / MININFRA |
+| 14 | Grid connections approximately 60% of households | REG — not supplied |
+| 15 | Off-grid access approximately 25% of households | REG — not supplied |
 | 16 | A third MNO licence is reportedly under consideration | Unattributed in the brief; nothing in the report |
 
-**On electricity (items 13–15).** The report reports **customer connections** — 2,008,342, up 13.5% from
-1,768,830 — and no access rate at all. Separately, the brief's own three electricity numbers do not reconcile:
-60% grid plus 25% off-grid is 85%, which is the floor of its own "85–88%" band, so the 88% upper bound is
-inconsistent with the components the brief itself gives.
+### Item 13 — household electricity access: now answered, and the brief is high and misdated
+
+The SDS in charge of ICT reports, citing **REG**, that household electricity access stood at **84.6% as of July
+2025**.
+
+| | Figure | Date |
+|---|---|---|
+| REG, via SDS | **84.6%** | July 2025 |
+| Brief | "approximately 85%–88%" | presented as "as of 2026" |
+
+Two faults, both small but both avoidable:
+
+- **The range is high at both ends.** 84.6% sits *below* the floor of the brief's 85–88% band. The upper bound of
+  88% is three and a half points above the only figure we can source.
+- **The date is wrong.** The brief presents its electricity figures under the heading "As of 2026". The REG figure is
+  July 2025. A 2025 figure labelled 2026 overstates how current the brief is, in a section where access is rising
+  year on year.
+
+**Correction to give the author:** *household electricity access 84.6% as at July 2025 (source: REG).*
+
+The grid and off-grid split (items 14–15) remains unverified — REG has not supplied it, and the Annual Report
+reports **customer connections** (2,008,342, up 13.5% from 1,768,830) rather than any access rate. The brief's own
+two components do not reconcile with its own total either: 60% plus 25% is 85%, the floor of its band, leaving the
+88% upper bound unsupported by its own arithmetic. Both figures should be struck or sourced to REG directly.
 
 **On a third licence (item 16).** See §4 item 20 — this is the brief's most significant omission, not just an
 unverifiable claim.
@@ -121,13 +157,26 @@ RURA's published measure of the same subject:
   in the ICT Sector Statistics Report for Q4 2025 (Table 1)
 - Active mobile internet subscriptions **11,193,584** at June 2026, up 9.82% (Annual Report)
 
-So the Authority's own published adoption figure is **74.35 per 100 inhabitants**, against the brief's 21%. Both are
-defensible on their own definitions — the gap is the well-known one between unique individuals and active
-subscriptions — but the brief does not say so, and the two numbers are three and a half times apart. A reader will
-conclude that one of them is wrong, and the one carrying RURA's name is the one that will be questioned.
+So the Authority's own published adoption figure is **74.35 per 100 inhabitants**, against the brief's 21%.
+
+**The SDS in charge of ICT has confirmed this reading**, putting mobile internet subscriptions at 11,193,584 as at
+June 2026, equivalent to **77.6% of the population**, and stating explicitly that this represents subscriptions
+rather than unique users, against GSMA's approximately 21% for unique users. The Authority's position is therefore
+that both figures are correct on their own definitions and that the gap between them is real and meaningful.
+
+That makes the labelling, not the arithmetic, the thing to fix. As the brief stands, the 21% figure appears without
+that distinction and carries the argument. A reader will conclude that one of the two numbers is wrong, and the one
+carrying RURA's name is the one that will be questioned.
+
+**A note on our own wording.** "77.6% of the population" is not quite right either, and nor is the published
+"74.35 per 100 inhabitants" when read as a percentage: one person may hold several subscriptions, which is precisely
+why the figure can exceed 100 for mobile-cellular. The correct form is *subscriptions per 100 inhabitants*. We
+should be careful not to repeat in our own correction the error we are asking the author to fix — see §7 item 1.
 
 **Recommendation:** if the GSMA figure is retained, it must state that it counts unique individuals, name the GSMA
-edition and year, and show RURA's subscription figure alongside it.
+edition and year, and show RURA's figure alongside it, each with its unit stated — for example: *"mobile internet
+subscriptions stood at 11,193,584 in June 2026, or 77.6 per 100 inhabitants (RURA). GSMA estimates unique mobile
+internet users at approximately 21% of the population in 2025; the two measure different things."*
 
 ### 17. "Commercial 5G availability — available in parts of Kigali through MTN Rwanda"
 
@@ -210,17 +259,22 @@ Raised here so they are fixed in our text, not because the brief is wrong about 
 
 1. **Do not endorse the brief as it stands.** A third of its numbers are not RURA indicators at all, and the
    Authority would be adopting third-party figures as regulatory data.
-2. **The two coverage figures can be settled today, but only internally.** No RURA publication reports coverage
-   any more, so ask the ICT department to confirm 3G and 4G population coverage from the Q4 FY2025/26 operator
-   returns. Until they do, the Authority cannot endorse 99% and 96%.
+2. **Give the author the three corrections we can now evidence.** 3G population coverage **96.53%** and 4G
+   **98.69%** at June 2026 — the brief has these transposed; household electricity access **84.6% at July 2025**
+   (REG) — the brief's 85–88% band is high at both ends and dated 2026; and the adoption figure labelled with its
+   unit. These are corrections of fact, not matters of interpretation.
 3. **Correct item 11 before it circulates further.** The 21% adoption figure, as presented, contradicts RURA's own
    published position on the same subject.
 4. **Offer the author our verified ICT figures** — the FY 2025/26 at-a-glance set, with prior-year comparators and
    stated reference dates. Every figure in §1 and §3 above is already published and sourced.
 5. **Correct the regulatory section**, which omits both regulations made during the year and substitutes an
    unsourced third-licence rumour for the MNP programme that is actually under way.
-6. Refer the population, GDP and electricity-access claims to **NISR**, **MINECOFIN** and **EDCL/MININFRA**
-   respectively. They are not ours to confirm.
+6. Refer the remaining claims to their own source holders: population and economic growth to **NISR** and
+   **MINECOFIN**, and the grid and off-grid split to **REG**. They are not ours to confirm.
+7. **Settle the coverage methodology before any national figure is published** — whether the number quoted is an
+   average across operators or any-operator coverage, and which operators sit in each technology row. See §2. This
+   matters more than it sounds: a national coverage figure, once given to an outside author, gets quoted for
+   years.
 
 ---
 
